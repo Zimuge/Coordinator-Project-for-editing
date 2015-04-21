@@ -1,0 +1,1118 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  13:51:25 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator  #
+#                          Project for editing\Projects\zstack\MyCoordinator\ #
+#                          Coordinator\Source\CoordinatorApp.c                #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordina #
+#                          tor Project for editing\Projects\zstack\MyCoordina #
+#                          tor\Coordinator\CC2530DB\..\..\..\Tools\CC2530DB\f #
+#                          8wCoord.cfg" (-DCPU32MHZ -DROOT=__near_func        #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
+#                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
+#                          -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordina #
+#                          tor Project for editing\Projects\zstack\MyCoordina #
+#                          tor\Coordinator\CC2530DB\..\..\..\Tools\CC2530DB\f #
+#                          8wConfig.cfg" (-DZIGBEEPRO -DSECURE=0              #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x02000000                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0x0030                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\Coordinator Project for                #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          Source\CoordinatorApp.c" -D ZTOOL_P1 -D            #
+#                          NV_RESTORE=1 -lC "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\Coordinator Project for                      #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\CoordinatorEB\List\" -lA                  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\CoordinatorEB\List\"         #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\CoordinatorEB\Obj\" -e       #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordina #
+#                          tor Project for editing\Projects\zstack\MyCoordina #
+#                          tor\Coordinator\CC2530DB\" -I                      #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\Source\" -I               #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\ZMain\TI2530DB\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordina #
+#                          tor Project for editing\Projects\zstack\MyCoordina #
+#                          tor\Coordinator\CC2530DB\..\..\..\..\..\Components #
+#                          \hal\include\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
+#                          º∆\SRC\Coordinator Project for                     #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\hal\target\CC25 #
+#                          30EB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\C #
+#                          oordinator Project for editing\Projects\zstack\MyC #
+#                          oordinator\Coordinator\CC2530DB\..\..\..\..\..\Com #
+#                          ponents\mac\include\" -I                           #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\high_level\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
+#                          º∆\SRC\Coordinator Project for                     #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\mac\low_level\s #
+#                          rf04\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\C #
+#                          oordinator Project for editing\Projects\zstack\MyC #
+#                          oordinator\Coordinator\CC2530DB\..\..\..\..\..\Com #
+#                          ponents\mac\low_level\srf04\single_chip\" -I       #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\..\..\Components\mt #
+#                          \" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coord #
+#                          inator Project for editing\Projects\zstack\MyCoord #
+#                          inator\Coordinator\CC2530DB\..\..\..\..\..\Compone #
+#                          nts\osal\include\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\Coordinator Project for                 #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\services\saddr\ #
+#                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordi #
+#                          nator Project for editing\Projects\zstack\MyCoordi #
+#                          nator\Coordinator\CC2530DB\..\..\..\..\..\Componen #
+#                          ts\services\sdata\" -I "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\Coordinator Project for                #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\stack\af\" -I   #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\..\..\Components\st #
+#                          ack\nwk\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\Coordinator Project for                          #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\stack\sapi\"    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordina #
+#                          tor Project for editing\Projects\zstack\MyCoordina #
+#                          tor\Coordinator\CC2530DB\..\..\..\..\..\Components #
+#                          \stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\Coordinator Project for                       #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\stack\sys\" -I  #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\..\..\Components\st #
+#                          ack\zdo\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR #
+#                          C\Coordinator Project for                          #
+#                          editing\Projects\zstack\MyCoordinator\Coordinator\ #
+#                          CC2530DB\..\..\..\..\..\Components\zmac\" -I       #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator #
+#                           Project for editing\Projects\zstack\MyCoordinator #
+#                          \Coordinator\CC2530DB\..\..\..\..\..\Components\zm #
+#                          ac\f8w\" -Ohz --require_prototypes                 #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator  #
+#                          Project for editing\Projects\zstack\MyCoordinator\ #
+#                          Coordinator\CC2530DB\CoordinatorEB\List\Coordinato #
+#                          rApp.lst                                           #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator  #
+#                          Project for editing\Projects\zstack\MyCoordinator\ #
+#                          Coordinator\CC2530DB\CoordinatorEB\Obj\Coordinator #
+#                          App.r51                                            #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\Coordinator Project for editing\Projects\zstack\MyCoordinator\Coordinator\Source\CoordinatorApp.c
+      1          /**************************************************************************************************
+      2            Filename:       CoordinatorApp.c
+      3            Revised:        $Date: 2009-03-18 15:56:27 -0700 (Wed, 18 Mar 2009) $
+      4            Revision:       $Revision: 19453 $
+      5          
+      6            Description:    Coordinator Application (no Profile).
+      7          
+      8          
+      9            Copyright 2007 Texas Instruments Incorporated. All rights reserved.
+     10          
+     11            IMPORTANT: Your use of this Software is limited to those specific rights
+     12            granted under the terms of a software license agreement between the user
+     13            who downloaded the software, his/her employer (which must be your employer)
+     14            and Texas Instruments Incorporated (the "License").  You may not use this
+     15            Software unless you agree to abide by the terms of the License. The License
+     16            limits your use, and you acknowledge, that the Software mdsay not be modified,
+     17            copied or distributed unless embedded on a Texas Instruments microcontroller
+     18            or used solely and exclusively in conjunction with a Texas Instruments radio
+     19            frequency transceiver, which is integrated into your product.  Other than for
+     20            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     21            works of, modify, distribute, perform, display or sell this Software and/or
+     22            its documentation for any purpose.
+     23          
+     24            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     25            PROVIDED ìAS IS?WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     26            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     27            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     28            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     29            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     30            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     31            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     32            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     33            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     34            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     35          
+     36            Should you have any questions regarding your right to use this Software,
+     37            contact Texas Instruments Incorporated at www.TI.com.
+     38          **************************************************************************************************/
+     39          
+     40          /*********************************************************************
+     41           * INCLUDES
+     42           */
+     43          
+     44          #include "CoordinatorVariable.h"
+
+   \                                 In  segment SFR_AN, at 0xa8
+   \   union <unnamed> volatile __sfr _A_IEN0
+   \                     _A_IEN0:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xc9
+   \   unsigned char volatile __sfr WDCTL
+   \                     WDCTL:
+   \   000000                DS 1
+     45          #include "CoordinatorAF.h"
+     46          #include "CoordinatorApp.h"
+     47          
+     48          /*********************************************************************
+     49           * MACROS
+     50           */
+     51          
+     52          /*********************************************************************
+     53           * CONSTANTS
+     54           */
+     55          
+     56          /*********************************************************************
+     57           * TYPEDEFS
+     58           */
+     59          
+     60          /*********************************************************************
+     61           * GLOBAL VARIABLES
+     62           */
+     63          
+     64          // This list should be filled with Application specific Cluster IDs.
+     65          
+     66          
+     67          // This is the Endpoint/Interface description.  It is defined here, but
+     68          // filled-in in CoordinatorApp_Init().  Another way to go would be to fill
+     69          // in the structure here and make it a "const" (in code space).  The
+     70          // way it's defined in this Coordinator app it is define in RAM.
+     71          
+     72          
+     73          /*********************************************************************
+     74           * EXTERNAL VARIABLES
+     75           */
+     76          
+     77          /*********************************************************************
+     78           * EXTERNAL FUNCTIONS
+     79           */
+     80          
+     81          /*********************************************************************
+     82           * LOCAL VARIABLES
+     83           */
+     84          
+     85          
+     86          /*********************************************************************
+     87           * LOCAL FUNCTIONS
+     88           */
+     89          void CoordinatorApp_CMDSerial(mtOSALSerialData_t *Msg);   // Ω” ’¥Æø⁄ ˝æ›≤¢¥¶¿Ì
+     90          /*********************************************************************
+     91           * NETWORK LAYER CALLBACKS
+     92           */
+     93          
+     94          /*********************************************************************
+     95           * PUBLIC FUNCTIONS
+     96           */
+     97          
+     98          /*********************************************************************
+     99           * @fn      CoordinatorApp_Init
+    100           *
+    101           * @brief   Initialization function for the Generic App Task.
+    102           *          This is called during initialization and should contain
+    103           *          any application specific initialization (ie. hardware
+    104           *          initialization/setup, table initialization, power up
+    105           *          notificaiton ... ).
+    106           *
+    107           * @param   task_id - the ID assigned by OSAL.  This ID should be
+    108           *                    used to send messages and set timers.
+    109           *
+    110           * @return  none
+    111           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    112          void CoordinatorApp_Init( uint8 task_id )
+   \                     CoordinatorApp_Init:
+    113          {
+   \   000000   74F5         MOV     A,#-0xb
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 11
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FE           MOV     R6,A
+    114            CoordinatorApp_TaskID = task_id;
+   \   000007   90....       MOV     DPTR,#CoordinatorApp_TaskID
+   \   00000A   F0           MOVX    @DPTR,A
+    115            CoordinatorApp_NwkState = DEV_INIT;
+   \   00000B   90....       MOV     DPTR,#CoordinatorApp_NwkState
+   \   00000E   7401         MOV     A,#0x1
+   \   000010   F0           MOVX    @DPTR,A
+    116            CoordinatorApp_TransID = 0;
+   \   000011   90....       MOV     DPTR,#CoordinatorApp_TransID
+   \   000014   E4           CLR     A
+   \   000015   F0           MOVX    @DPTR,A
+    117            
+    118            MT_UartInit();
+   \   000016                ; Setup parameters for call to function MT_UartInit
+   \   000016   12....       LCALL   ??MT_UartInit?relay
+    119            MT_UartRegisterTaskID(task_id);
+   \   000019                ; Setup parameters for call to function MT_UartRegisterTaskID
+   \   000019   EE           MOV     A,R6
+   \   00001A   F9           MOV     R1,A
+   \   00001B   12....       LCALL   ??MT_UartRegisterTaskID?relay
+    120            PANID =  _NIB.nwkPanId;
+   \   00001E   12....       LCALL   ?Subroutine2 & 0xFFFF
+    121            
+    122            
+    123            //for debug use
+    124            /*uint8 panid;  
+    125            panid = (uint8)((PANID >> 8) & 0x00ff);
+    126            HalUARTWrite(0,&panid,1);
+    127            panid = (uint8)((PANID) & 0x00ff);
+    128            HalUARTWrite(0,&panid,1);*/
+    129          
+    130            // Device hardware initialization can be added here or in main() (Zmain.c).
+    131            // If the hardware is application specific - add it here.
+    132            // If the hardware is other parts of the device add it in main().
+    133          
+    134           #if defined ( BUILD_ALL_DEVICES )
+    135            // The "Demo" target is setup to have BUILD_ALL_DEVICES and HOLD_AUTO_START
+    136            // We are looking at a jumper (defined in CoordinatorAppHw.c) to be jumpered
+    137            // together - if they are - we will start up a coordinator. Otherwise,
+    138            // the device will start as a router.
+    139          #endif // BUILD_ALL_DEVICES
+    140          
+    141          #if defined ( HOLD_AUTO_START )
+    142            // HOLD_AUTO_START is a compile option that will surpress ZDApp
+    143            //  from starting the device and wait for the application to
+    144            //  start the device.
+    145            ZDOInitDevice(0);
+    146          #endif
+    147          
+    148            // Setup for the periodic message's destination address
+    149            // Broadcast to everyone
+    150            CoordinatorApp_Broadcast_DstAddr.addrMode = (afAddrMode_t)AddrBroadcast;
+   \                     ??CrossCallReturnLabel_2:
+   \   000021   90....       MOV     DPTR,#CoordinatorApp_Broadcast_DstAddr + 8
+   \   000024   740F         MOV     A,#0xf
+   \   000026   F0           MOVX    @DPTR,A
+    151            CoordinatorApp_Broadcast_DstAddr.endPoint = CoordinatorAPP_ENDPOINT;
+   \   000027   A3           INC     DPTR
+   \   000028   7414         MOV     A,#0x14
+   \   00002A   F0           MOVX    @DPTR,A
+    152            CoordinatorApp_Broadcast_DstAddr.addr.shortAddr = 0xFFFF;
+   \   00002B   90....       MOV     DPTR,#CoordinatorApp_Broadcast_DstAddr
+   \   00002E   74FF         MOV     A,#-0x1
+   \   000030   F0           MOVX    @DPTR,A
+   \   000031   A3           INC     DPTR
+   \   000032   F0           MOVX    @DPTR,A
+    153          
+    154            // Setup for the flash command's destination address - Group 1
+    155            CoordinatorApp_Group_DstAddr.addrMode = (afAddrMode_t)afAddrGroup;
+   \   000033   90....       MOV     DPTR,#CoordinatorApp_Group_DstAddr + 8
+   \   000036   7401         MOV     A,#0x1
+   \   000038   F0           MOVX    @DPTR,A
+    156            CoordinatorApp_Group_DstAddr.endPoint = CoordinatorAPP_ENDPOINT;
+   \   000039   A3           INC     DPTR
+   \   00003A   7414         MOV     A,#0x14
+   \   00003C   F0           MOVX    @DPTR,A
+    157            CoordinatorApp_Group_DstAddr.addr.shortAddr = GroupId;
+   \   00003D   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_6:
+   \   000040   90....       MOV     DPTR,#CoordinatorApp_Group_DstAddr
+   \   000043   E8           MOV     A,R0
+   \   000044   F0           MOVX    @DPTR,A
+   \   000045   A3           INC     DPTR
+   \   000046   E9           MOV     A,R1
+   \   000047   F0           MOVX    @DPTR,A
+    158            
+    159            CoordinatorApp_P2PDstAddr.addrMode = (afAddrMode_t)afAddr16Bit;
+   \   000048   90....       MOV     DPTR,#CoordinatorApp_P2PDstAddr + 8
+   \   00004B   7402         MOV     A,#0x2
+   \   00004D   F0           MOVX    @DPTR,A
+    160            CoordinatorApp_P2PDstAddr.endPoint = CoordinatorAPP_ENDPOINT;
+   \   00004E   A3           INC     DPTR
+   \   00004F   7414         MOV     A,#0x14
+   \   000051   F0           MOVX    @DPTR,A
+    161            CoordinatorApp_P2PDstAddr.addr.shortAddr = 0x0000;
+   \   000052   90....       MOV     DPTR,#CoordinatorApp_P2PDstAddr
+   \   000055   E4           CLR     A
+   \   000056   F0           MOVX    @DPTR,A
+   \   000057   A3           INC     DPTR
+   \   000058   F0           MOVX    @DPTR,A
+    162            
+    163            // Fill out the endpoint description.
+    164            CoordinatorApp_epDesc.endPoint = CoordinatorAPP_ENDPOINT;
+   \   000059   90....       MOV     DPTR,#CoordinatorApp_epDesc
+   \   00005C   7414         MOV     A,#0x14
+   \   00005E   F0           MOVX    @DPTR,A
+    165            CoordinatorApp_epDesc.task_id = &CoordinatorApp_TaskID;
+   \   00005F   A3           INC     DPTR
+   \   000060   74..         MOV     A,#CoordinatorApp_TaskID & 0xff
+   \   000062   F0           MOVX    @DPTR,A
+   \   000063   A3           INC     DPTR
+   \   000064   74..         MOV     A,#(CoordinatorApp_TaskID >> 8) & 0xff
+   \   000066   F0           MOVX    @DPTR,A
+    166            CoordinatorApp_epDesc.simpleDesc
+    167                      = (SimpleDescriptionFormat_t *)&CoordinatorApp_SimpleDesc;
+   \   000067   A3           INC     DPTR
+   \   000068   74..         MOV     A,#CoordinatorApp_SimpleDesc & 0xff
+   \   00006A   F0           MOVX    @DPTR,A
+   \   00006B   A3           INC     DPTR
+   \   00006C   74..         MOV     A,#(CoordinatorApp_SimpleDesc >> 8) & 0xff
+   \   00006E   F0           MOVX    @DPTR,A
+    168            CoordinatorApp_epDesc.latencyReq = noLatencyReqs;
+   \   00006F   A3           INC     DPTR
+   \   000070   E4           CLR     A
+   \   000071   F0           MOVX    @DPTR,A
+    169          
+    170            // Register the endpoint description with the AF
+    171            afRegister( &CoordinatorApp_epDesc );
+   \   000072                ; Setup parameters for call to function afRegister
+   \   000072   7A..         MOV     R2,#CoordinatorApp_epDesc & 0xff
+   \   000074   7B..         MOV     R3,#(CoordinatorApp_epDesc >> 8) & 0xff
+   \   000076   12....       LCALL   ??afRegister?relay
+    172          
+    173            // Register for all key events - This app will handle all key events
+    174            RegisterForKeys( CoordinatorApp_TaskID );
+   \   000079                ; Setup parameters for call to function RegisterForKeys
+   \   000079   90....       MOV     DPTR,#CoordinatorApp_TaskID
+   \   00007C   E0           MOVX    A,@DPTR
+   \   00007D   F9           MOV     R1,A
+   \   00007E   12....       LCALL   ??RegisterForKeys?relay
+    175          
+    176            // By default, all devices start out in Group 1
+    177            CoordinatorApp_Group.ID = GroupId;//0x0001
+   \   000081   12....       LCALL   ?Subroutine3 & 0xFFFF
+   \                     ??CrossCallReturnLabel_7:
+   \   000084   90....       MOV     DPTR,#CoordinatorApp_Group
+   \   000087   E8           MOV     A,R0
+   \   000088   F0           MOVX    @DPTR,A
+   \   000089   A3           INC     DPTR
+   \   00008A   E9           MOV     A,R1
+   \   00008B   F0           MOVX    @DPTR,A
+    178            osal_memcpy( CoordinatorApp_Group.name, "Group 1", 7  );
+   \   00008C                ; Setup parameters for call to function osal_memcpy
+   \   00008C   75....       MOV     ?V0 + 0,#`?<Constant "Group 1">` & 0xff
+   \   00008F   75....       MOV     ?V0 + 1,#(`?<Constant "Group 1">` >> 8) & 0xff
+   \   000092   75..00       MOV     ?V0 + 2,#0x0
+   \   000095   78..         MOV     R0,#?V0 + 0
+   \   000097   12....       LCALL   ?PUSH_XSTACK_I_THREE
+   \   00009A   7C07         MOV     R4,#0x7
+   \   00009C   7D00         MOV     R5,#0x0
+   \   00009E   7A..         MOV     R2,#(CoordinatorApp_Group + 2) & 0xff
+   \   0000A0   7B..         MOV     R3,#((CoordinatorApp_Group + 2) >> 8) & 0xff
+   \   0000A2   12....       LCALL   ??osal_memcpy?relay
+   \   0000A5   7403         MOV     A,#0x3
+   \   0000A7   12....       LCALL   ?DEALLOC_XSTACK8
+    179            aps_AddGroup( CoordinatorAPP_ENDPOINT, &CoordinatorApp_Group );
+   \   0000AA                ; Setup parameters for call to function aps_AddGroup
+   \   0000AA   7A..         MOV     R2,#CoordinatorApp_Group & 0xff
+   \   0000AC   7B..         MOV     R3,#(CoordinatorApp_Group >> 8) & 0xff
+   \   0000AE   7914         MOV     R1,#0x14
+   \   0000B0   12....       LCALL   ??aps_AddGroup?relay
+    180          }
+   \   0000B3   7F03         MOV     R7,#0x3
+   \   0000B5   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine3:
+   \   000000   90....       MOV     DPTR,#GroupId
+   \   000003                REQUIRE ??Subroutine5_0
+   \   000003                ; // Fall through to label ??Subroutine5_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine5_0:
+   \   000000   E0           MOVX    A,@DPTR
+   \   000001   F8           MOV     R0,A
+   \   000002   A3           INC     DPTR
+   \   000003   E0           MOVX    A,@DPTR
+   \   000004   F9           MOV     R1,A
+   \   000005   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine2:
+   \   000000   90....       MOV     DPTR,#_NIB + 33
+   \   000003   E0           MOVX    A,@DPTR
+   \   000004   F8           MOV     R0,A
+   \   000005   A3           INC     DPTR
+   \   000006   E0           MOVX    A,@DPTR
+   \   000007   F9           MOV     R1,A
+   \   000008   90....       MOV     DPTR,#PANID
+   \   00000B   E8           MOV     A,R0
+   \   00000C   F0           MOVX    @DPTR,A
+   \   00000D   A3           INC     DPTR
+   \   00000E   E9           MOV     A,R1
+   \   00000F   F0           MOVX    @DPTR,A
+   \   000010   22           RET
+    181          
+    182          /*********************************************************************
+    183           * @fn      CoordinatorApp_ProcessEvent
+    184           *
+    185           * @brief   Generic Application Task event processor.  This function
+    186           *          is called to process all events for the task.  Events
+    187           *          include timers, messages and any other user defined events.
+    188           *
+    189           * @param   task_id  - The OSAL assigned task ID.
+    190           * @param   events - events to process.  This is a bit map and can
+    191           *                   contain more than one event.
+    192           *
+    193           * @return  none
+    194           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    195          uint16 CoordinatorApp_ProcessEvent( uint8 task_id, uint16 events )
+   \                     CoordinatorApp_ProcessEvent:
+    196          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 6
+   \   000005   74FA         MOV     A,#-0x6
+   \   000007   12....       LCALL   ?ALLOC_XSTACK8
+   \   00000A   EA           MOV     A,R2
+   \   00000B   FE           MOV     R6,A
+   \   00000C   EB           MOV     A,R3
+   \   00000D   FF           MOV     R7,A
+    197            afIncomingMSGPacket_t *MSGpkt;
+    198            (void)task_id;  // Intentionally unreferenced parameter
+    199          
+    200            if ( events & SYS_EVENT_MSG )
+   \   00000E   5480         ANL     A,#0x80
+   \   000010   7003         JNZ     $+5
+   \   000012   02....       LJMP    ??CoordinatorApp_ProcessEvent_0 & 0xFFFF
+    201            {
+    202              MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( CoordinatorApp_TaskID );
+   \   000015                ; Setup parameters for call to function osal_msg_receive
+   \   000015   8054         SJMP    ??CoordinatorApp_ProcessEvent_1
+    203              while ( MSGpkt )
+    204              {
+    205                switch ( MSGpkt->hdr.event)
+    206                {
+    207                case CMD_SERIAL_MSG :
+    208                     CoordinatorApp_CMDSerial((mtOSALSerialData_t *)MSGpkt);
+    209                     break;
+    210                  // Received when a messages is received (OTA) for this endpoint
+    211                  case AF_INCOMING_MSG_CMD:
+    212                    CoordinatorApp_HandleAfIncomingMessage( MSGpkt );
+    213                    break;
+    214                  // Received whenever the device changes state in the network
+    215                  case ZDO_STATE_CHANGE:
+    216                    CoordinatorApp_NwkState = (devStates_t)(MSGpkt->hdr.status);
+   \                     ??CoordinatorApp_ProcessEvent_2:
+   \   000017   A3           INC     DPTR
+   \   000018   E0           MOVX    A,@DPTR
+   \   000019   90....       MOV     DPTR,#CoordinatorApp_NwkState
+   \   00001C   F0           MOVX    @DPTR,A
+    217                    if ((CoordinatorApp_NwkState == DEV_ZB_COORD))
+   \   00001D   6409         XRL     A,#0x9
+   \   00001F   7043         JNZ     ??CrossCallReturnLabel_8
+    218                    {
+    219                     // NLME_RestoreFromNV();
+    220                      // tell the arm the Personal Area Net with PANID is created 
+    221                      uint8 str[6] = {0xff,0xff,0xff,0xff};
+   \   000021   90....       MOV     DPTR,#`?<Constant {255, 255, 255, 255}>`
+   \   000024   C082         PUSH    DPL
+   \   000026   85..82       MOV     DPL,?XSP + 0
+   \   000029   85..83       MOV     DPH,?XSP + 1
+   \   00002C   AC82         MOV     R4,DPL
+   \   00002E   AD83         MOV     R5,DPH
+   \   000030   7583..       MOV     DPH,#(`?<Constant {255, 255, 255, 255}>` >> 8) & 0xff
+   \   000033   D082         POP     DPL
+   \   000035   7406         MOV     A,#0x6
+   \   000037   12....       LCALL   ?MOVE_LONG8_XDATA_XDATA
+    222                      PANID =  _NIB.nwkPanId;
+   \   00003A   12....       LCALL   ?Subroutine2 & 0xFFFF
+    223                      str[4] = (uint8)((PANID >> 8) & 0x00ff);
+   \                     ??CrossCallReturnLabel_3:
+   \   00003D   7404         MOV     A,#0x4
+   \   00003F   12....       LCALL   ?XSTACK_DISP0_8
+   \   000042   E9           MOV     A,R1
+   \   000043   F0           MOVX    @DPTR,A
+    224                      str[5] = (uint8)((PANID) & 0x00ff);
+   \   000044   90....       MOV     DPTR,#PANID
+   \   000047   E0           MOVX    A,@DPTR
+   \   000048   C0E0         PUSH    A
+   \   00004A   7405         MOV     A,#0x5
+   \   00004C   12....       LCALL   ?XSTACK_DISP0_8
+   \   00004F   D0E0         POP     A
+   \   000051   F0           MOVX    @DPTR,A
+    225                      CoordinatorWriteUART(str,6);
+   \   000052                ; Setup parameters for call to function CoordinatorWriteUART
+   \   000052   7906         MOV     R1,#0x6
+   \   000054   85..82       MOV     DPL,?XSP + 0
+   \   000057   85..83       MOV     DPH,?XSP + 1
+   \   00005A   AA82         MOV     R2,DPL
+   \   00005C   AB83         MOV     R3,DPH
+   \   00005E   12....       LCALL   ??CoordinatorWriteUART?relay
+    226                      // Start count the tick_alive of the AddrList
+    227                
+    228                      osal_start_timerEx( CoordinatorApp_TaskID,
+    229                                        CoordinatorAPP_TICK_ALIVE_MSG_EVT,
+    230                                       6000);
+   \   000061                ; Setup parameters for call to function osal_start_timerEx
+   \   000061   12....       LCALL   ?Subroutine4 & 0xFFFF
+    231                      
+    232                    }
+    233                    else
+    234                    {
+    235                     //  no existing on the network
+    236                    }
+    237                    break;
+    238                   
+    239          
+    240                  default:
+    241                    break;
+    242                }
+    243          
+    244                // Release the memory
+    245                osal_msg_deallocate( (uint8 *)MSGpkt );
+   \                     ??CrossCallReturnLabel_8:
+   \   000064                ; Setup parameters for call to function osal_msg_deallocate
+   \   000064   AA..         MOV     R2,?V0 + 0
+   \   000066   AB..         MOV     R3,?V0 + 1
+   \   000068   12....       LCALL   ??osal_msg_deallocate?relay
+    246          
+    247                // Next - if one is available
+    248                MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( CoordinatorApp_TaskID );
+   \   00006B                ; Setup parameters for call to function osal_msg_receive
+   \                     ??CoordinatorApp_ProcessEvent_1:
+   \   00006B   90....       MOV     DPTR,#CoordinatorApp_TaskID
+   \   00006E   E0           MOVX    A,@DPTR
+   \   00006F   F9           MOV     R1,A
+   \   000070   12....       LCALL   ??osal_msg_receive?relay
+   \   000073   8A..         MOV     ?V0 + 0,R2
+   \   000075   8B..         MOV     ?V0 + 1,R3
+   \   000077   E5..         MOV     A,?V0 + 0
+   \   000079   45..         ORL     A,?V0 + 1
+   \   00007B   6026         JZ      ??CoordinatorApp_ProcessEvent_3
+   \   00007D   85..82       MOV     DPL,?V0 + 0
+   \   000080   85..83       MOV     DPH,?V0 + 1
+   \   000083   E0           MOVX    A,@DPTR
+   \   000084   14           DEC     A
+   \   000085   600A         JZ      ??CoordinatorApp_ProcessEvent_4
+   \   000087   24E7         ADD     A,#-0x19
+   \   000089   600F         JZ      ??CoordinatorApp_ProcessEvent_5
+   \   00008B   2449         ADD     A,#0x49
+   \   00008D   6088         JZ      ??CoordinatorApp_ProcessEvent_2
+   \   00008F   80D3         SJMP    ??CrossCallReturnLabel_8
+   \                     ??CoordinatorApp_ProcessEvent_4:
+   \   000091                ; Setup parameters for call to function CoordinatorApp_CMDSerial
+   \   000091   AA..         MOV     R2,?V0 + 0
+   \   000093   AB..         MOV     R3,?V0 + 1
+   \   000095   12....       LCALL   ??CoordinatorApp_CMDSerial?relay
+   \   000098   80CA         SJMP    ??CrossCallReturnLabel_8
+   \                     ??CoordinatorApp_ProcessEvent_5:
+   \   00009A                ; Setup parameters for call to function CoordinatorApp_HandleAfIncomingMessage
+   \   00009A   AA..         MOV     R2,?V0 + 0
+   \   00009C   AB..         MOV     R3,?V0 + 1
+   \   00009E   12....       LCALL   ??CoordinatorApp_HandleAfIncomingMessage?relay
+   \   0000A1   80C1         SJMP    ??CrossCallReturnLabel_8
+    249              }
+    250          
+    251              // return unprocessed events
+    252              return (events ^ SYS_EVENT_MSG);
+   \                     ??CoordinatorApp_ProcessEvent_3:
+   \   0000A3   EE           MOV     A,R6
+   \   0000A4   FA           MOV     R2,A
+   \   0000A5   EF           MOV     A,R7
+   \   0000A6   6480         XRL     A,#0x80
+   \   0000A8   FB           MOV     R3,A
+   \   0000A9   8079         SJMP    ??CoordinatorApp_ProcessEvent_6
+    253            }
+    254          
+    255            
+    256            if(events & CoordinatorAPP_TICK_ALIVE_MSG_EVT)
+   \                     ??CoordinatorApp_ProcessEvent_0:
+   \   0000AB   EE           MOV     A,R6
+   \   0000AC   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0000AE   505F         JNC     ??CrossCallReturnLabel_9
+    257            {
+    258              uint8 i = 0;
+    259              for(i = 0; i < DEVICEID_MAX; i++)
+   \   0000B0   7A00         MOV     R2,#0x0
+    260              {
+    261                  if(AddrList[i].tick_alive == 0)
+   \                     ??CoordinatorApp_ProcessEvent_7:
+   \   0000B2   8A..         MOV     ?V0 + 0,R2
+   \   0000B4   75..00       MOV     ?V0 + 1,#0x0
+   \   0000B7   7402         MOV     A,#0x2
+   \   0000B9   78..         MOV     R0,#?V0 + 0
+   \   0000BB   12....       LCALL   ?S_SHL
+   \   0000BE   74..         MOV     A,#(AddrList + 3) & 0xff
+   \   0000C0   25..         ADD     A,?V0 + 0
+   \   0000C2   F582         MOV     DPL,A
+   \   0000C4   74..         MOV     A,#((AddrList + 3) >> 8) & 0xff
+   \   0000C6   35..         ADDC    A,?V0 + 1
+   \   0000C8   F583         MOV     DPH,A
+   \   0000CA   E0           MOVX    A,@DPTR
+   \   0000CB   8A..         MOV     ?V0 + 0,R2
+   \   0000CD   75..00       MOV     ?V0 + 1,#0x0
+   \   0000D0   701C         JNZ     ??CoordinatorApp_ProcessEvent_8
+    262                  {
+    263                      AddrList[i].status = FALSE;
+   \   0000D2   7402         MOV     A,#0x2
+   \   0000D4   78..         MOV     R0,#?V0 + 0
+   \   0000D6   12....       LCALL   ?S_SHL
+   \   0000D9   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_0:
+   \   0000DC   E4           CLR     A
+   \   0000DD   F0           MOVX    @DPTR,A
+    264                      AddrList[i].tick_alive = 0;
+   \   0000DE   8882         MOV     DPL,R0
+   \   0000E0   8983         MOV     DPH,R1
+   \   0000E2   A3           INC     DPTR
+   \   0000E3   A3           INC     DPTR
+   \   0000E4   A3           INC     DPTR
+   \   0000E5   F0           MOVX    @DPTR,A
+    265                      AddrList[i].addr = 0x0000;
+   \   0000E6   8882         MOV     DPL,R0
+   \   0000E8   8983         MOV     DPH,R1
+   \   0000EA   F0           MOVX    @DPTR,A
+   \   0000EB   A3           INC     DPTR
+   \   0000EC   8016         SJMP    ??CoordinatorApp_ProcessEvent_9
+    266                  }
+    267                  else
+    268                  {
+    269                       AddrList[i].tick_alive--;
+   \                     ??CoordinatorApp_ProcessEvent_8:
+   \   0000EE   7402         MOV     A,#0x2
+   \   0000F0   78..         MOV     R0,#?V0 + 0
+   \   0000F2   12....       LCALL   ?S_SHL
+   \   0000F5   12....       LCALL   ?Subroutine1 & 0xFFFF
+   \                     ??CrossCallReturnLabel_1:
+   \   0000F8   A3           INC     DPTR
+   \   0000F9   E0           MOVX    A,@DPTR
+   \   0000FA   14           DEC     A
+   \   0000FB   F0           MOVX    @DPTR,A
+    270                       AddrList[i].status = TRUE;
+   \   0000FC   8882         MOV     DPL,R0
+   \   0000FE   8983         MOV     DPH,R1
+   \   000100   A3           INC     DPTR
+   \   000101   A3           INC     DPTR
+   \   000102   7401         MOV     A,#0x1
+   \                     ??CoordinatorApp_ProcessEvent_9:
+   \   000104   F0           MOVX    @DPTR,A
+    271                  }
+    272              }
+   \   000105   0A           INC     R2
+   \   000106   EA           MOV     A,R2
+   \   000107   C3           CLR     C
+   \   000108   9464         SUBB    A,#0x64
+   \   00010A   40A6         JC      ??CoordinatorApp_ProcessEvent_7
+    273              osal_start_timerEx( CoordinatorApp_TaskID,
+    274                                        CoordinatorAPP_TICK_ALIVE_MSG_EVT,
+    275                                       6000); 
+   \   00010C                ; Setup parameters for call to function osal_start_timerEx
+   \   00010C   12....       LCALL   ?Subroutine4 & 0xFFFF
+    276            }
+    277            
+    278            //  (the rest event trrigered by change PANID  ).
+    279            if ( events & CoordinatorAPP_REST_MSG_EVT)
+   \                     ??CrossCallReturnLabel_9:
+   \   00010F   EE           MOV     A,R6
+   \   000110   5402         ANL     A,#0x2
+   \   000112   600C         JZ      ??CoordinatorApp_ProcessEvent_10
+    280            {
+    281               SystemReset();
+   \   000114   C2AF         CLR     0xa8.7
+   \   000116   C2AF         CLR     0xa8.7
+   \   000118   75C9AB       MOV     0xc9,#-0x55
+   \   00011B   75C95B       MOV     0xc9,#0x5b
+   \                     ??CoordinatorApp_ProcessEvent_11:
+   \   00011E   80FE         SJMP    ??CoordinatorApp_ProcessEvent_11
+    282              //return (events ^ CoordinatorAPP_SEND_PERIODIC_MSG_EVT);
+    283            }
+    284            
+    285            // Discard unknown events
+    286            return 0;
+   \                     ??CoordinatorApp_ProcessEvent_10:
+   \   000120   7A00         MOV     R2,#0x0
+   \   000122   7B00         MOV     R3,#0x0
+   \                     ??CoordinatorApp_ProcessEvent_6:
+   \   000124   7406         MOV     A,#0x6
+   \   000126   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000129                REQUIRE ?Subroutine0
+   \   000129                REQUIRE _A_IEN0
+   \   000129                REQUIRE WDCTL
+   \   000129                ; // Fall through to label ?Subroutine0
+    287          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   7F04         MOV     R7,#0x4
+   \   000002   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine4:
+   \   000000   7C70         MOV     R4,#0x70
+   \   000002   7D17         MOV     R5,#0x17
+   \   000004   7A01         MOV     R2,#0x1
+   \   000006                REQUIRE ??Subroutine6_0
+   \   000006                ; // Fall through to label ??Subroutine6_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine6_0:
+   \   000000   7B00         MOV     R3,#0x0
+   \   000002   90....       MOV     DPTR,#CoordinatorApp_TaskID
+   \   000005   E0           MOVX    A,@DPTR
+   \   000006   F9           MOV     R1,A
+   \   000007   12....       LCALL   ??osal_start_timerEx?relay
+   \   00000A   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine1:
+   \   000000   74..         MOV     A,#AddrList & 0xff
+   \   000002   25..         ADD     A,?V0 + 0
+   \   000004   F8           MOV     R0,A
+   \   000005   74..         MOV     A,#(AddrList >> 8) & 0xff
+   \   000007   35..         ADDC    A,?V0 + 1
+   \   000009   F9           MOV     R1,A
+   \   00000A   8882         MOV     DPL,R0
+   \   00000C   8983         MOV     DPH,R1
+   \   00000E   A3           INC     DPTR
+   \   00000F   A3           INC     DPTR
+   \   000010   22           RET
+    288          
+    289          
+    290          /*********************************************************************
+    291           * @fn      CoordinatorApp_CMDSerial
+    292           *
+    293           * @brief   Send the message from the UART.
+    294           *
+    295           * @param   none
+    296           *
+    297           * @return  none
+    298           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    299          void CoordinatorApp_CMDSerial(mtOSALSerialData_t * Msg)
+   \                     CoordinatorApp_CMDSerial:
+    300          {
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+    301            /***************for the serial use***********************/
+    302           /* uint8 i = 0;
+    303            uint8 SerialDataLen = Msg->msg[0];
+    304            uint8 *str = &(Msg->msg[1]);
+    305            uint8 len = str[0];//get the command data length
+    306            uint8 id = str[1];// get the current id of the device 
+    307            uint8 command = str[2];*/
+    308            
+    309             /***************for the arm use***********************/
+    310           // uint8 i = 0;
+    311            uint8 *str = &(Msg->msg[0]);
+   \   000005   8A82         MOV     DPL,R2
+   \   000007   8B83         MOV     DPH,R3
+   \   000009   A3           INC     DPTR
+   \   00000A   A3           INC     DPTR
+   \   00000B   E0           MOVX    A,@DPTR
+   \   00000C   F5..         MOV     ?V0 + 0,A
+   \   00000E   A3           INC     DPTR
+   \   00000F   E0           MOVX    A,@DPTR
+   \   000010   F5..         MOV     ?V0 + 1,A
+    312            uint8 len = str[0];//get the command data length
+   \   000012   85..82       MOV     DPL,?V0 + 0
+   \   000015   F583         MOV     DPH,A
+   \   000017   E0           MOVX    A,@DPTR
+   \   000018   FA           MOV     R2,A
+    313            uint8 id = str[1];// get the current id of the device 
+   \   000019   A3           INC     DPTR
+   \   00001A   E0           MOVX    A,@DPTR
+   \   00001B   FE           MOV     R6,A
+    314            uint8 command = str[2];
+   \   00001C   85..82       MOV     DPL,?V0 + 0
+   \   00001F   85..83       MOV     DPH,?V0 + 1
+   \   000022   A3           INC     DPTR
+   \   000023   A3           INC     DPTR
+   \   000024   E0           MOVX    A,@DPTR
+   \   000025   FB           MOV     R3,A
+    315            CoordinatorApp_P2PDstAddr.addr.shortAddr = AddrList[id].addr;// get the addres of the device id
+   \   000026   8E..         MOV     ?V0 + 2,R6
+   \   000028   75..00       MOV     ?V0 + 3,#0x0
+   \   00002B   7402         MOV     A,#0x2
+   \   00002D   78..         MOV     R0,#?V0 + 2
+   \   00002F   12....       LCALL   ?S_SHL
+   \   000032   74..         MOV     A,#AddrList & 0xff
+   \   000034   25..         ADD     A,?V0 + 2
+   \   000036   F582         MOV     DPL,A
+   \   000038   74..         MOV     A,#(AddrList >> 8) & 0xff
+   \   00003A   35..         ADDC    A,?V0 + 3
+   \   00003C   F583         MOV     DPH,A
+   \   00003E   12....       LCALL   ??Subroutine5_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_4:
+   \   000041   90....       MOV     DPTR,#CoordinatorApp_P2PDstAddr
+   \   000044   E8           MOV     A,R0
+   \   000045   F0           MOVX    @DPTR,A
+   \   000046   A3           INC     DPTR
+   \   000047   E9           MOV     A,R1
+   \   000048   F0           MOVX    @DPTR,A
+    316            switch (command)
+   \   000049   EB           MOV     A,R3
+   \   00004A   24F6         ADD     A,#-0xa
+   \   00004C   7003         JNZ     $+5
+   \   00004E   02....       LJMP    ??CoordinatorApp_CMDSerial_0 & 0xFFFF
+   \   000051   24FA         ADD     A,#-0x6
+   \   000053   7062         JNZ     ??CoordinatorApp_CMDSerial_1
+    317            {
+    318                case CMD_SET_DEVICEID: 
+    319                  if(len == 1)
+    320                  {
+    321                   // DevList[str[3]] = DevList[id];
+    322                    //CoordinatorApp_SendP2PMessage(COORDINATOR_COMMAND_CLUSTERID,4,str);
+    323                  //  HalUARTWrite(0,(uint8 *)(&DevList[id]),2);
+    324                  }
+    325                  break;
+    326              case CMD_SET_PANID:
+    327                {
+    328                  if(len == 1)
+   \   000055   7401         MOV     A,#0x1
+   \   000057   6A           XRL     A,R2
+   \   000058   705D         JNZ     ??CoordinatorApp_CMDSerial_1
+    329                  {
+    330                    if(PANID == ((uint16) str[3]));
+   \   00005A   85..82       MOV     DPL,?V0 + 0
+   \   00005D   85..83       MOV     DPH,?V0 + 1
+   \   000060   A3           INC     DPTR
+   \   000061   A3           INC     DPTR
+   \   000062   A3           INC     DPTR
+   \   000063   E0           MOVX    A,@DPTR
+   \   000064   F8           MOV     R0,A
+   \   000065   7583..       MOV     DPH,#(PANID >> 8) & 0xff
+   \   000068   7582..       MOV     DPL,#PANID & 0xff
+   \   00006B   E0           MOVX    A,@DPTR
+   \   00006C   68           XRL     A,R0
+   \   00006D   7002         JNZ     ??CoordinatorApp_CMDSerial_2
+   \   00006F   A3           INC     DPTR
+   \   000070   E0           MOVX    A,@DPTR
+   \                     ??CoordinatorApp_CMDSerial_2:
+   \   000071   6049         JZ      ??CoordinatorApp_CMDSerial_3
+    331                    else
+    332                    {
+    333                     PANID = str[3];
+   \   000073   85..82       MOV     DPL,?V0 + 0
+   \   000076   85..83       MOV     DPH,?V0 + 1
+   \   000079   A3           INC     DPTR
+   \   00007A   A3           INC     DPTR
+   \   00007B   A3           INC     DPTR
+   \   00007C   E0           MOVX    A,@DPTR
+   \   00007D   90....       MOV     DPTR,#PANID
+   \   000080   F0           MOVX    @DPTR,A
+   \   000081   A3           INC     DPTR
+   \   000082   E4           CLR     A
+   \   000083   F0           MOVX    @DPTR,A
+    334                    // tell or the enddevice that the PanId will be changed 
+    335                    CoordinatorApp_SendBroadcastMessage(COORDINATOR_COMMAND_CLUSTERID,4,str);
+   \   000084                ; Setup parameters for call to function CoordinatorApp_SendBroadcastMessage
+   \   000084   78..         MOV     R0,#?V0 + 0
+   \   000086   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   000089   7C04         MOV     R4,#0x4
+   \   00008B   7D00         MOV     R5,#0x0
+   \   00008D   7A02         MOV     R2,#0x2
+   \   00008F   7B00         MOV     R3,#0x0
+   \   000091   12....       LCALL   ??CoordinatorApp_SendBroadcastMessage?relay
+   \   000094   7402         MOV     A,#0x2
+   \   000096   12....       LCALL   ?DEALLOC_XSTACK8
+    336                    _NIB.nwkPanId = PANID;
+   \   000099   90....       MOV     DPTR,#PANID
+   \   00009C   12....       LCALL   ??Subroutine5_0 & 0xFFFF
+   \                     ??CrossCallReturnLabel_5:
+   \   00009F   90....       MOV     DPTR,#_NIB + 33
+   \   0000A2   E8           MOV     A,R0
+   \   0000A3   F0           MOVX    @DPTR,A
+   \   0000A4   A3           INC     DPTR
+   \   0000A5   E9           MOV     A,R1
+   \   0000A6   F0           MOVX    @DPTR,A
+    337                    NLME_UpdateNV(0x01);
+   \   0000A7                ; Setup parameters for call to function NLME_UpdateNV
+   \   0000A7   7901         MOV     R1,#0x1
+   \   0000A9   12....       LCALL   ??NLME_UpdateNV?relay
+    338                    osal_start_timerEx(CoordinatorApp_TaskID,
+    339                                        CoordinatorAPP_REST_MSG_EVT ,
+    340                                     CoordinatorAPP_REST_MSG_TIMEOUT);
+   \   0000AC                ; Setup parameters for call to function osal_start_timerEx
+   \   0000AC   7CB8         MOV     R4,#-0x48
+   \   0000AE   7D0B         MOV     R5,#0xb
+   \   0000B0   7A02         MOV     R2,#0x2
+   \   0000B2   12....       LCALL   ??Subroutine6_0 & 0xFFFF
+    341                    
+    342                     } 
+    343                  }
+    344                }
+   \                     ??CrossCallReturnLabel_10:
+   \   0000B5   8005         SJMP    ??CoordinatorApp_CMDSerial_3
+    345                default:
+    346                  if((len == 1) && (id <= DEVICEID_MAX))
+   \                     ??CoordinatorApp_CMDSerial_1:
+   \   0000B7   7401         MOV     A,#0x1
+   \   0000B9   6A           XRL     A,R2
+   \   0000BA   701B         JNZ     ??CoordinatorApp_CMDSerial_0
+   \                     ??CoordinatorApp_CMDSerial_3:
+   \   0000BC   EE           MOV     A,R6
+   \   0000BD   C3           CLR     C
+   \   0000BE   9465         SUBB    A,#0x65
+   \   0000C0   5015         JNC     ??CoordinatorApp_CMDSerial_0
+    347                  CoordinatorApp_SendP2PMessage(COORDINATOR_COMMAND_CLUSTERID,4,str);
+   \   0000C2                ; Setup parameters for call to function CoordinatorApp_SendP2PMessage
+   \   0000C2   78..         MOV     R0,#?V0 + 0
+   \   0000C4   12....       LCALL   ?PUSH_XSTACK_I_TWO
+   \   0000C7   7C04         MOV     R4,#0x4
+   \   0000C9   7D00         MOV     R5,#0x0
+   \   0000CB   7A02         MOV     R2,#0x2
+   \   0000CD   7B00         MOV     R3,#0x0
+   \   0000CF   12....       LCALL   ??CoordinatorApp_SendP2PMessage?relay
+   \   0000D2   7402         MOV     A,#0x2
+   \   0000D4   12....       LCALL   ?DEALLOC_XSTACK8
+    348                  break;
+    349              }
+    350             // for(i = 0; i<SerialDataLen;i++)
+    351             // {
+    352               // HalUARTWrite(0,&str[i],1); 
+    353              //}
+    354          }
+   \                     ??CoordinatorApp_CMDSerial_0:
+   \   0000D7   02....       LJMP    ?Subroutine0 & 0xFFFF
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??CoordinatorApp_Init?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    CoordinatorApp_Init
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??CoordinatorApp_ProcessEvent?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    CoordinatorApp_ProcessEvent
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??CoordinatorApp_CMDSerial?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    CoordinatorApp_CMDSerial
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     `?<Constant "Group 1">`:
+   \   000000   47726F75     DB "Group 1"
+   \            70203100
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     `?<Constant {255, 255, 255, 255}>`:
+   \   000000   FF           DB 255
+   \   000001   FF           DB 255
+   \   000002   FF           DB 255
+   \   000003   FF           DB 255
+   \   000004   0000         DB 0, 0
+    355          
+    356          
+    357          
+    358          
+    359          /*********************************************************************
+    360          
+    361          *********************************************************************/
+
+   Maximum stack usage in bytes:
+
+     Function                       ISTACK PSTACK XSTACK
+     --------                       ------ ------ ------
+     CoordinatorApp_CMDSerial           2      0     32
+       -> CoordinatorApp_SendBroadcastMessage
+                                        0      0     28
+       -> NLME_UpdateNV                 0      0     24
+       -> osal_start_timerEx            0      0     24
+       -> CoordinatorApp_SendP2PMessage
+                                        0      0     28
+     CoordinatorApp_Init                0      0     14
+       -> MT_UartInit                   0      0     22
+       -> MT_UartRegisterTaskID         0      0     22
+       -> afRegister                    0      0     22
+       -> RegisterForKeys               0      0     22
+       -> osal_memcpy                   0      0     28
+       -> aps_AddGroup                  0      0     22
+     CoordinatorApp_ProcessEvent        2      0     18
+       -> osal_msg_receive              0      0     36
+       -> CoordinatorWriteUART          0      0     36
+       -> osal_start_timerEx            0      0     36
+       -> osal_msg_deallocate           0      0     36
+       -> osal_msg_receive              0      0     36
+       -> CoordinatorApp_CMDSerial      0      0     36
+       -> CoordinatorApp_HandleAfIncomingMessage
+                                        0      0     36
+       -> osal_start_timerEx            0      0     36
+
+
+   Segment part sizes:
+
+     Function/Label                      Bytes
+     --------------                      -----
+     _A_IEN0                                1
+     WDCTL                                  1
+     CoordinatorApp_Init                  184
+     ?Subroutine3                           3
+     ??Subroutine5_0                        6
+     ?Subroutine2                          17
+     CoordinatorApp_ProcessEvent          297
+     ?Subroutine0                           5
+     ?Subroutine4                           6
+     ??Subroutine6_0                       11
+     ?Subroutine1                          17
+     CoordinatorApp_CMDSerial             218
+     ??CoordinatorApp_Init?relay            6
+     ??CoordinatorApp_ProcessEvent?relay    6
+     ??CoordinatorApp_CMDSerial?relay       6
+     ?<Constant "Group 1">                  8
+     ?<Constant {255, 255, 255, 255}>       6
+
+ 
+ 764 bytes in segment BANKED_CODE
+  18 bytes in segment BANK_RELAYS
+   2 bytes in segment SFR_AN
+  14 bytes in segment XDATA_ROM_C
+ 
+ 782 bytes of CODE  memory
+  14 bytes of CONST memory
+   0 bytes of DATA  memory (+ 2 bytes shared)
+
+Errors: none
+Warnings: none

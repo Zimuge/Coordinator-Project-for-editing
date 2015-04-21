@@ -1,0 +1,380 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  13:47:20 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\Source\Coord #
+#                          inatorVariable.c                                   #
+#    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\Tools\CC2530DB\f8wCoord.cfg" (-DCPU32MHZ     #
+#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
+#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
+#                          -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\Tools\CC2530DB\f8wConfig.cfg" (-DZIGBEEPRO   #
+#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          -DDEFAULT_CHANLIST=0x02000000                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0x0030                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
+#                          œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0              #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\Source\CoordinatorVariable.c" -D  #
+#                          ZTOOL_P1 -D NV_RESTORE=1 -lC                       #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
+#                          rdinatorEB\List\" -lA "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\CoordinatorEB\List\"     #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
+#                          rdinatorEB\Obj\" -e --no_code_motion --debug       #
+#                          --core=plain --dptr=16,1 --data_model=large        #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I "C:\Users\William\Desktop\ #
+#                          ±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0             #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\" -I                     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          Source\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
+#                          \coor ±∏∑›\Coor for ARM2.0                         #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\ZMain\TI2530DB\ #
+#                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor   #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\hal\include\" -I            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\hal\target\CC2530EB\" -I    #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\mac\include\" -I            #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\mac\high_level\" -I         #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\mac\low_level\srf04\" -I    #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
+#                          ..\..\..\..\Components\mac\low_level\srf04\single_ #
+#                          chip\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
+#                          oor ±∏∑›\Coor for ARM2.0                           #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
+#                          oor ±∏∑›\Coor for ARM2.0                           #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\osal\include\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0                 #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\services\saddr\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\services\sdata\" -I "C:\Users\William\Desktop\±œ #
+#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\af\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
+#                          \SRC\coor ±∏∑›\Coor for ARM2.0                     #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\nwk\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sapi\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
+#                          º∆\SRC\coor ±∏∑›\Coor for ARM2.0                   #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\sys\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\stack\zdo\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
+#                          \coor ±∏∑›\Coor for ARM2.0                         #
+#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
+#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
+#                          s\zmac\f8w\" -Ohz --require_prototypes             #
+#    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
+#                          rdinatorEB\List\CoordinatorVariable.lst            #
+#    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
+#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
+#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
+#                          rdinatorEB\Obj\CoordinatorVariable.r51             #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordinator\Coordinator\Source\CoordinatorVariable.c
+      1          #include "CoordinatorVariable.h"
+      2          
+      3          
+      4          
+      5          
+      6          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+      7          const cId_t CoordinatorApp_ClusterList[CoordinatorAPP_MAX_CLUSTERS] =
+   \                     CoordinatorApp_ClusterList:
+   \   000000   0100         DW 1
+   \   000002   0200         DW 2
+   \   000004   0300         DW 3
+   \   000006   0400         DW 4
+      8          {
+      9           ENDDEVICE_DATA_CLUSTERID,             
+     10           COORDINATOR_COMMAND_CLUSTERID,   
+     11           COORDINATOR_DATA_CLUSTERID,
+     12           COORDINATOR_BROADCAST_CLUSTERID 
+     13          };
+     14          
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     15          const SimpleDescriptionFormat_t CoordinatorApp_SimpleDesc =
+   \                     CoordinatorApp_SimpleDesc:
+   \   000000   14           DB 20
+   \   000001   080F         DW 3848
+   \   000003   0100         DW 1
+   \   000005   00           DB 0
+   \   000006   04           DB 4
+   \   000007   ....         DW CoordinatorApp_ClusterList
+   \   000009   04           DB 4
+   \   00000A   ....         DW CoordinatorApp_ClusterList
+     16          {
+     17            CoordinatorAPP_ENDPOINT,              //  int Endpoint;
+     18            CoordinatorAPP_PROFID,                //  uint16 AppProfId[2];
+     19            CoordinatorAPP_DEVICEID,              //  uint16 AppDeviceId[2];
+     20            CoordinatorAPP_DEVICE_VERSION,        //  int   AppDevVer:4;
+     21            CoordinatorAPP_FLAGS,                 //  int   AppFlags:4;
+     22            CoordinatorAPP_MAX_CLUSTERS,          //  uint8  AppNumInClusters;
+     23            (cId_t *)CoordinatorApp_ClusterList,  //  uint8 *pAppInClusterList;
+     24            CoordinatorAPP_MAX_CLUSTERS,          //  uint8  AppNumInClusters;
+     25            (cId_t *)CoordinatorApp_ClusterList   //  uint8 *pAppInClusterList;
+     26          };
+     27          
+     28          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     29          uint8 CoordinatorApp_TaskID;   // Task ID for internal task/event processing
+   \                     CoordinatorApp_TaskID:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     30                                    // This variable will be received when
+     31                                    // CoordinatorApp_Init() is called.
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     32          devStates_t CoordinatorApp_NwkState;
+   \                     CoordinatorApp_NwkState:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     33          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     34          uint8 CoordinatorApp_TransID;  // This is the unique message ID (counter)
+   \                     CoordinatorApp_TransID:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     35          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     36          afAddrType_t CoordinatorApp_Broadcast_DstAddr;
+   \                     CoordinatorApp_Broadcast_DstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     37          afAddrType_t CoordinatorApp_Group_DstAddr;
+   \                     CoordinatorApp_Group_DstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     38          afAddrType_t CoordinatorApp_P2PDstAddr;     //µ„∂‘µ„
+   \                     CoordinatorApp_P2PDstAddr:
+   \   000000                DS 12
+   \   00000C                REQUIRE __INIT_XDATA_Z
+     39          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     40          aps_Group_t CoordinatorApp_Group;
+   \                     CoordinatorApp_Group:
+   \   000000                DS 18
+   \   000012                REQUIRE __INIT_XDATA_Z
+     41          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     42          uint8 CoordinatorAppPeriodicCounter = 0;
+   \                     CoordinatorAppPeriodicCounter:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     43          uint8 CoordinatorAppFlashCounter = 0;
+   \                     CoordinatorAppFlashCounter:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     44          uint16 GroupId = 0x0001;
+   \                     GroupId:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for GroupId>`
+   \   000002                REQUIRE __INIT_XDATA_I
+     45          //uint16 DevList[256] = {0};
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     46          endPointDesc_t CoordinatorApp_epDesc;
+   \                     CoordinatorApp_epDesc:
+   \   000000                DS 6
+   \   000006                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     47          uint16 PANID = 0;
+   \                     PANID:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     48          uint8 Serial_Data[16] = {SOP};// use to translate data to the qt;
+   \                     Serial_Data:
+   \   000000                DS 16
+   \   000010                REQUIRE `?<Initializer for Serial_Data>`
+   \   000010                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     49          uint8 FCS;///the Serial_Data's FCS
+   \                     FCS:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     50          bool   REST_PANID  = FALSE;// when change the PANID through the Uart,
+   \                     REST_PANID:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     51          //use for restet the system
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     52          AddrList_t AddrList[101] = {{0,0,0}};  //the address list of the devices
+   \                     AddrList:
+   \   000000                DS 404
+   \   000194                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for GroupId>`:
+   \   000000   0100         DW 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for Serial_Data>`:
+   \   000000   FE           DB 254
+   \   000001   00           DB 0
+   \   000002   00           DB 0
+   \   000003   00           DB 0
+   \   000004   00           DB 0
+   \   000005   00           DB 0
+   \   000006   00           DB 0
+   \   000007   00           DB 0
+   \   000008   00           DB 0
+   \   000009   00           DB 0
+   \   00000A   00           DB 0
+   \   00000B   00           DB 0
+   \   00000C   00           DB 0
+   \   00000D   00           DB 0
+   \   00000E   00           DB 0
+   \   00000F   00           DB 0
+
+
+   Segment part sizes:
+
+     Function/Label                 Bytes
+     --------------                 -----
+     CoordinatorApp_ClusterList        8
+     CoordinatorApp_SimpleDesc        12
+     CoordinatorApp_TaskID             1
+     CoordinatorApp_NwkState           1
+     CoordinatorApp_TransID            1
+     CoordinatorApp_Broadcast_DstAddr
+                                      12
+     CoordinatorApp_Group_DstAddr     12
+     CoordinatorApp_P2PDstAddr        12
+     CoordinatorApp_Group             18
+     CoordinatorAppPeriodicCounter     1
+     CoordinatorAppFlashCounter        1
+     GroupId                           2
+     CoordinatorApp_epDesc             6
+     PANID                             2
+     Serial_Data                      16
+     FCS                               1
+     REST_PANID                        1
+     AddrList                        404
+     ?<Initializer for GroupId>        2
+     ?<Initializer for Serial_Data>   16
+
+ 
+  18 bytes in segment XDATA_I
+  18 bytes in segment XDATA_ID
+  20 bytes in segment XDATA_ROM_C
+ 473 bytes in segment XDATA_Z
+ 
+  18 bytes of CODE  memory
+  20 bytes of CONST memory
+ 491 bytes of XDATA memory
+
+Errors: none
+Warnings: none
