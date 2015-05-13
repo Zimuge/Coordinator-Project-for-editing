@@ -44,6 +44,7 @@
 #include "CoordinatorVariable.h"
 #include "CoordinatorAF.h"
 #include "CoordinatorApp.h"
+#include "hal_lcd.h"
 
 /*********************************************************************
  * MACROS
@@ -177,6 +178,8 @@ void CoordinatorApp_Init( uint8 task_id )
   CoordinatorApp_Group.ID = GroupId;//0x0001
   osal_memcpy( CoordinatorApp_Group.name, "Group 1", 7  );
   aps_AddGroup( CoordinatorAPP_ENDPOINT, &CoordinatorApp_Group );
+  HalLcd_HW_WaitMs(3000);
+  
 }
 
 /*********************************************************************
@@ -218,11 +221,15 @@ uint16 CoordinatorApp_ProcessEvent( uint8 task_id, uint16 events )
           {
            // NLME_RestoreFromNV();
             // tell the arm the Personal Area Net with PANID is created 
-            uint8 str[6] = {0xff,0xff,0xff,0xff};
+            uint8 str[4] = {0x00,0x00,0x00,0x00};
             PANID =  _NIB.nwkPanId;
-            str[4] = (uint8)((PANID >> 8) & 0x00ff);
+           /* str[4] = (uint8)((PANID >> 8) & 0x00ff);
             str[5] = (uint8)((PANID) & 0x00ff);
-            CoordinatorWriteUART(str,6);
+            CoordinatorWriteUART(str,6);*/
+           str[FRAME_LEN] = 1;
+           str[FRAME_CMD] = CMD_INIT_COOR;
+           str[FRAME_PARAHIGH] = (0x00ff & _NIB.nwkPanId);
+           CoordinatorWriteUART(str,4);  // tell the gateway the panid;
             // Start count the tick_alive of the AddrList
       
             osal_start_timerEx( CoordinatorApp_TaskID,
@@ -273,6 +280,7 @@ uint16 CoordinatorApp_ProcessEvent( uint8 task_id, uint16 events )
     osal_start_timerEx( CoordinatorApp_TaskID,
                               CoordinatorAPP_TICK_ALIVE_MSG_EVT,
                              6000); 
+    return (events ^ CoordinatorAPP_TICK_ALIVE_MSG_EVT);// it's very important to clear the events after handeling the events
   }
   
   //  (the rest event trrigered by change PANID  ).
@@ -309,28 +317,28 @@ void CoordinatorApp_CMDSerial(mtOSALSerialData_t * Msg)
    /***************for the arm use***********************/
  // uint8 i = 0;
   uint8 *str = &(Msg->msg[0]);
-  uint8 len = str[0];//get the command data length
-  uint8 id = str[1];// get the current id of the device 
-  uint8 command = str[2];
+  uint8 len = str[FRAME_LEN];//get the command data length
+  uint8 id = str[FRAME_ROOMID];// get the current id of the device 
+  uint8 command = str[FRAME_CMD];
   CoordinatorApp_P2PDstAddr.addr.shortAddr = AddrList[id].addr;// get the addres of the device id
   switch (command)
   {
-      case CMD_SET_DEVICEID: 
+    case CMD_INIT_COOR:  // reset the coordinator for arm
         if(len == 1)
         {
-         // DevList[str[3]] = DevList[id];
-          //CoordinatorApp_SendP2PMessage(COORDINATOR_COMMAND_CLUSTERID,4,str);
-        //  HalUARTWrite(0,(uint8 *)(&DevList[id]),2);
+           osal_start_timerEx(CoordinatorApp_TaskID,
+                              CoordinatorAPP_REST_MSG_EVT ,
+                           300);
         }
         break;
     case CMD_SET_PANID:
       {
         if(len == 1)
         {
-          if(PANID == ((uint16) str[3]));
+          if(PANID == ((uint16) str[FRAME_PARAHIGH]));
           else
           {
-           PANID = str[3];
+           PANID = ((uint16)str[FRAME_PARAHIGH]);
           // tell or the enddevice that the PanId will be changed 
           CoordinatorApp_SendBroadcastMessage(COORDINATOR_COMMAND_CLUSTERID,4,str);
           _NIB.nwkPanId = PANID;

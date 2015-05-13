@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        20/Apr/2015  13:47:35 /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        12/May/2015  19:18:26 /
 // Copyright 2004-2011 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -10,19 +10,20 @@
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
 //    Source file        =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor        /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Com /
-//                          ponents\mac\low_level\srf04\mac_radio.c           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Components\mac\low_level\srf04\mac_radio.c  /
 //    Command line       =  -f "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\Tools\CC2530DB\f8wCoord.cfg" (-DCPU32MHZ  /
-//                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TR /
-//                          UE -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8     /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"     /
+//                          (-DCPU32MHZ -DROOT=__near_func                    /
+//                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                  /
+//                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8        /
 //                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)   /
 //                          -f "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\Tools\CC2530DB\f8wConfig.cfg"             /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"    /
 //                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0     /
 //                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000         /
 //                          -DZDAPP_CONFIG_PAN_ID=0x0030                      /
@@ -46,113 +47,116 @@
 //                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
 //                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\ /
-//                          ±ÏÒµÉè¼Æ\SRC\coor ±¸·Ý\Coor for ARM2.0            /
-//                          ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Components\mac\low_level /
-//                          \srf04\mac_radio.c" -D ZTOOL_P1 -D NV_RESTORE=1   /
-//                          -lC "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor   /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\" -lA                           /
+//                          ±ÏÒµÉè¼Æ\SRC\coor ±¸·Ý\ARM\Coor for ARM           /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Components\mac\l /
+//                          ow_level\srf04\mac_radio.c" -D ZTOOL_P1 -D        /
+//                          NV_RESTORE=1 -lC "C:\Users\William\Desktop\±ÏÒµÉè /
+//                          ¼Æ\SRC\coor ±¸·Ý\ARM\Coor for ARM                 /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\CoordinatorEB\ /
+//                          List\" -lA "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC /
+//                          \coor ±¸·Ý\ARM\Coor for ARM                       /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\CoordinatorEB\ /
+//                          List\" --diag_suppress Pe001,Pa010 -o             /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\" --diag_suppress Pe001,Pa010   /
-//                          -o "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\Obj\" -e --no_code_motion --debug    /
-//                          --core=plain --dptr=16,1 --data_model=large       /
-//                          --code_model=banked --calling_convention=xdata_re /
-//                          entrant --place_constants=data_rom                /
-//                          --nr_virtual_regs 16 -I                           /
-//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\" /
-//                           -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor   /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\Source\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\ /
-//                          SRC\coor ±¸·Ý\Coor for ARM2.0                     /
-//                          ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\ZMain\TI2530D /
-//                          B\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coo /
-//                          r ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\P /
-//                          rojects\zstack\MyCoordinator\Coordinator\CC2530DB /
-//                          \..\..\..\..\..\Components\hal\include\" -I       /
-//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\hal\target\CC2530EB\"    /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\CoordinatorEB\Obj\" -e --no_code_motion   /
+//                          --debug --core=plain --dptr=16,1                  /
+//                          --data_model=large --code_model=banked            /
+//                          --calling_convention=xdata_reentrant              /
+//                          --place_constants=data_rom --nr_virtual_regs 16   /
 //                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\include\" -I         /
-//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\high_level\" -I      /
-//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\low_level\srf04\"    /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\S /
+//                          RC\coor ±¸·Ý\ARM\Coor for ARM                     /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\Source\"    /
 //                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\low_level\srf04\sing /
-//                          le_chip\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\S /
-//                          RC\coor ±¸·Ý\Coor for ARM2.0                      /
-//                          ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\mt\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SR /
-//                          C\coor ±¸·Ý\Coor for ARM2.0                       /
-//                          ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\osal\include\" -I "C:\Users\William\Desktop\± /
-//                          ÏÒµÉè¼Æ\SRC\coor ±¸·Ý\Coor for ARM2.0             /
-//                          ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\services\saddr\" -I                           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\ZMain\TI2530DB\" -I              /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\services\sdata\" -I      /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\hal\include\"   /
+//                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\hal\target\CC25 /
+//                          30EB\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\ /
+//                          coor ±¸·Ý\ARM\Coor for ARM                        /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\..\..\..\.. /
+//                          \Components\mac\include\" -I                      /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\af\" -I            /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mac\high_level\ /
+//                          " -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor  /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mac\low_level\s /
+//                          rf04\" -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\ /
+//                          coor ±¸·Ý\ARM\Coor for ARM                        /
+//                          3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\..\..\..\.. /
+//                          \Components\mac\low_level\srf04\single_chip\" -I  /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\nwk\" -I           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mt\" -I         /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sapi\" -I          /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\osal\include\"  /
+//                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\services\saddr\ /
+//                          " -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor  /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\services\sdata\ /
+//                          " -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor  /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\af\" -I   /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sec\" -I           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\nwk\" -I  /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sys\" -I           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sapi\"    /
+//                          -I "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor    /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sec\" -I  /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\zdo\" -I           /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sys\" -I  /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\zmac\" -I                /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\zdo\" -I  /
 //                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\zmac\f8w\" -Ohz          /
-//                          --require_prototypes                              /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\zmac\" -I       /
+//                          "C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor       /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\zmac\f8w\"      /
+//                          -Ohz --require_prototypes                         /
 //    List file          =  C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor        /
-//                          ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\mac_radio.s51                   /
+//                          ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Ê /
+//                          ý¾Ý£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\CoordinatorEB\List\mac_radio.s51          /
 //                                                                            /
 //                                                                            /
 ///////////////////////////////////////////////////////////////////////////////
@@ -506,15 +510,13 @@ macRadioUpdateTxPower SYMBOL "macRadioUpdateTxPower"
         EXTERN ??macRxOnRequest?relay
         FUNCTION ??macRxOnRequest?relay,00H
         EXTERN macPib
-        EXTERN macRadioDefsRefTableId
-        EXTERN macRadioDefsRssiAdj
-        EXTERN macRadioDefsTxPwrTables
+        EXTERN macRadioDefsTxPwrBare
         EXTERN macRxFilter
         EXTERN macRxOutgoingAckFlag
         EXTERN macSleepState
         EXTERN macTxActive
 
-// C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor ±¸·Ý\Coor for ARM2.0 ÐÞ¸ÄµØÖ·±í¼ÓÈë±£»î¼ÆÊ±Æ÷\Components\mac\low_level\srf04\mac_radio.c
+// C:\Users\William\Desktop\±ÏÒµÉè¼Æ\SRC\coor ±¸·Ý\ARM\Coor for ARM 3.1(Ìí¼ÓÖ¸ÁîÉÏ´«ËùÓÐ³õÊ¼»¯Êý¾Ý£©\Components\mac\low_level\srf04\mac_radio.c
 //    1 /**************************************************************************************************
 //    2   Filename:       mac_radio.c
 //    3   Revised:        $Date: 2007-09-11 10:58:41 -0700 (Tue, 11 Sep 2007) $
@@ -1068,21 +1070,13 @@ macRadioSetTxPower:
 //  243   const uint8 CODE *pTable = macRadioDefsTxPwrTables[macRadioDefsRefTableId >> 4];
 //  244 #elif defined HAL_PA_LNA || defined HAL_PA_LNA_CC2590
 //  245   const uint8 CODE *pTable = macRadioDefsTxPwrTables[0];
-        MOV     DPTR,#macRadioDefsTxPwrTables
-        CLR     A
-        MOVC    A,@A+DPTR
-        MOV     R0,A
-        MOV     A,#0x1
-        MOVC    A,@A+DPTR
-        MOV     R1,A
 //  246 #else
 //  247   const uint8 CODE *pTable = macRadioDefsTxPwrBare;
 //  248 #endif
 //  249 
 //  250   /* if the selected dBm is out of range, use the closest available */
 //  251   if ((int8)txPower > (int8)pTable[MAC_RADIO_DEFS_TBL_TXPWR_FIRST_ENTRY])
-        MOV     DPL,R0
-        MOV     DPH,R1
+        MOV     DPTR,#macRadioDefsTxPwrBare
         CLR     A
         MOVC    A,@A+DPTR
         CLR     C
@@ -1099,10 +1093,10 @@ macRadioSetTxPower:
         INC     DPTR
         CLR     A
         MOVC    A,@A+DPTR
-        MOV     R2,A
+        MOV     R0,A
         MOV     A,R6
         CLR     C
-        SUBB    A,R2
+        SUBB    A,R0
         MOV     C,0xD0 /* PSW */.2
         XRL     A,PSW
         RLC     A
@@ -1110,9 +1104,6 @@ macRadioSetTxPower:
 //  257   {
 //  258     /* smaller than the lowest power level -- out of table range */
 //  259     txPower = pTable[MAC_RADIO_DEFS_TBL_TXPWR_LAST_ENTRY];
-        MOV     DPL,R0
-        MOV     DPH,R1
-        INC     DPTR
 ??macRadioSetTxPower_0:
         CLR     A
         MOVC    A,@A+DPTR
@@ -1129,7 +1120,7 @@ macRadioSetTxPower:
 //  269   HAL_ENTER_CRITICAL_SECTION(s);
 ??macRadioSetTxPower_1:
         MOV     A,0xa8
-        MOV     R4,A
+        MOV     R2,A
         CLR     0xa8.7
 //  270   /* When calculating index to the power register value table,
 //  271    * either txPower (of uint8 type) has to be explicitly type-casted to int8
@@ -1141,18 +1132,17 @@ macRadioSetTxPower:
 //  277     uint8 index = pTable[MAC_RADIO_DEFS_TBL_TXPWR_FIRST_ENTRY] - txPower
 //  278       + MAC_RADIO_DEFS_TBL_TXPWR_ENTRIES;
 //  279     reqTxPower = pTable[index];
-        MOV     DPL,R0
-        MOV     DPH,R1
+        MOV     DPTR,#macRadioDefsTxPwrBare
         CLR     A
         MOVC    A,@A+DPTR
         CLR     C
         SUBB    A,R6
         ADD     A,#0x2
-        MOV     R2,A
-        MOV     A,R0
-        ADD     A,R2
+        MOV     R0,A
+        MOV     A,#macRadioDefsTxPwrBare & 0xff
+        ADD     A,R0
         MOV     DPL,A
-        MOV     A,R1
+        MOV     A,#(macRadioDefsTxPwrBare >> 8) & 0xff
         ADDC    A,#0x0
         MOV     DPH,A
         CLR     A
@@ -1161,7 +1151,7 @@ macRadioSetTxPower:
         MOVX    @DPTR,A
 //  280   }
 //  281   HAL_EXIT_CRITICAL_SECTION(s);
-        MOV     A,R4
+        MOV     A,R2
         MOV     C,0xE0 /* A   */.7
         MOV     0xa8.7,C
 //  282 
@@ -1845,10 +1835,6 @@ macRadioEnergyDetectStop:
 //  517   uint8 energyDetectMeasurement;
 //  518 
 //  519   rssiDbm = MAC_RADIO_RECORD_MAX_RSSI_STOP() + MAC_RADIO_RSSI_OFFSET;
-        ; Setup parameters for call to function macMcuRecordMaxRssiStop
-        LCALL   ??macMcuRecordMaxRssiStop?relay
-        MOV     A,R1
-        MOV     R2,A
 //  520   MAC_RADIO_RSSI_LNA_OFFSET(rssiDbm);
 //  521   energyDetectMeasurement = radioComputeED(rssiDbm);
 //  522 
@@ -1857,19 +1843,9 @@ macRadioEnergyDetectStop:
 //  525 
 //  526   return(energyDetectMeasurement);
         ; Setup parameters for call to function radioComputeED
-        MOV     DPTR,#macRadioDefsRefTableId
-        MOVX    A,@DPTR
-        ANL     A,#0xf
-        MOV     R0,A
-        MOV     A,#macRadioDefsRssiAdj & 0xff
-        ADD     A,R0
-        MOV     DPL,A
-        MOV     A,#(macRadioDefsRssiAdj >> 8) & 0xff
-        ADDC    A,#0x0
-        MOV     DPH,A
-        CLR     A
-        MOVC    A,@A+DPTR
-        ADD     A,R2
+        ; Setup parameters for call to function macMcuRecordMaxRssiStop
+        LCALL   ??macMcuRecordMaxRssiStop?relay
+        MOV     A,R1
         ADD     A,#-0x49
         MOV     R1,A
         LCALL   ??radioComputeED?relay
@@ -2140,12 +2116,12 @@ macRadioComputeLQI:
 //  593 /**************************************************************************************************
 //  594 */
 // 
-// 642 bytes in segment BANKED_CODE
+// 605 bytes in segment BANKED_CODE
 // 102 bytes in segment BANK_RELAYS
 //   1 byte  in segment SFR_AN
 //   4 bytes in segment XDATA_Z
 // 
-// 744 bytes of CODE  memory
+// 707 bytes of CODE  memory
 //   0 bytes of DATA  memory (+ 1 byte shared)
 //   4 bytes of XDATA memory
 //

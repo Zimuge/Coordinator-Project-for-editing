@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=256921440
+Checksum=-2008098628
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -30,9 +30,11 @@ Count=0
 Stop timers on halt=0
 Leave target running=1
 [Aliases]
-A0=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato Final Release for ARM\Components\osal\common\OSAL_Memory.c" ""
-A1=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato Final Release for ARM\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
-A2=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato for ARM2.0 修改地址表\Components\osal\common\OSAL_Memory.c" ""
-A3=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato for ARM2.0 修改地址表\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
-Count=4
+A0=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coor for ARM2.0 修改地址表加入保活计时器\Components\osal\common\OSAL_Memory.c" ""
+A1=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coor for ARM2.0 修改地址表加入保活计时器\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A2=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato Final Release for ARM\Components\osal\common\OSAL_Memory.c" ""
+A3=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato Final Release for ARM\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A4=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato for ARM2.0 修改地址表\Components\osal\common\OSAL_Memory.c" ""
+A5=_ "C:\Users\William\Desktop\毕业设计\SRC\coor 备份\Coordinato for ARM2.0 修改地址表\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+Count=6
 SuppressDialog=0

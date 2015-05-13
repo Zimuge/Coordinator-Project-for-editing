@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  13:47:35 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         12/May/2015  19:18:36 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -10,21 +10,23 @@
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
 #    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Comp #
-#                          onents\mac\low_level\srf04\single_chip\mac_mcu.c   #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Components\mac\low_level\srf04\single_chip\ma #
+#                          c_mcu.c                                            #
 #    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\Tools\CC2530DB\f8wCoord.cfg" (-DCPU32MHZ     #
-#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
-#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"        #
+#                          (-DCPU32MHZ -DROOT=__near_func                     #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
 #                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
 #                          -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\Tools\CC2530DB\f8wConfig.cfg" (-DZIGBEEPRO   #
-#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
-#                          -DDEFAULT_CHANLIST=0x02000000                      #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"       #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
 #                          -DZDAPP_CONFIG_PAN_ID=0x0030                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
 #                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
@@ -46,121 +48,124 @@
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
 #                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0              #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Components\mac\low_level\ #
-#                          srf04\single_chip\mac_mcu.c" -D ZTOOL_P1 -D        #
-#                          NV_RESTORE=1 -lC "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\CoordinatorEB\List\"     #
-#                          -lA "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\List\" --diag_suppress Pe001,Pa010 -o   #
+#                          œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM             #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Components\mac\lo #
+#                          w_level\srf04\single_chip\mac_mcu.c" -D ZTOOL_P1   #
+#                          -D NV_RESTORE=1 -lC "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM                #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\CoordinatorEB\Li #
+#                          st\" -lA "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\co #
+#                          or ±∏∑›\ARM\Coor for ARM                           #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\CoordinatorEB\Li #
+#                          st\" --diag_suppress Pe001,Pa010 -o                #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\Obj\" -e --no_code_motion --debug       #
-#                          --core=plain --dptr=16,1 --data_model=large        #
-#                          --code_model=banked --calling_convention=xdata_ree #
-#                          ntrant --place_constants=data_rom                  #
-#                          --nr_virtual_regs 16 -I "C:\Users\William\Desktop\ #
-#                          ±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0             #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\" -I                     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\Obj\" -e --no_code_motion      #
+#                          --debug --core=plain --dptr=16,1                   #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ #
+#                          coor ±∏∑›\ARM\Coor for ARM                         #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\Source\" -I   #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          Source\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
-#                          \coor ±∏∑›\Coor for ARM2.0                         #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\ZMain\TI2530DB\ #
-#                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor   #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\hal\include\" -I            #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\ZMain\TI2530DB\" -I                 #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\hal\target\CC2530EB\" -I    #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\hal\include\" -I   #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\include\" -I            #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\hal\target\CC2530E #
+#                          B\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor #
+#                           ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  #
+#                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC #
+#                          2530DB\..\..\..\..\..\Components\mac\include\" -I  #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\high_level\" -I         #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\mac\high_level\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\mac\low_level\srf0 #
+#                          4\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor #
+#                           ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  #
+#                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC #
+#                          2530DB\..\..\..\..\..\Components\mac\low_level\srf #
+#                          04\single_chip\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM                #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\..\..\..\..\C #
+#                          omponents\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
+#                          º∆\SRC\coor ±∏∑›\ARM\Coor for ARM                  #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\..\..\..\..\C #
+#                          omponents\osal\include\" -I                        #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\low_level\srf04\" -I    #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\services\saddr\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\services\sdata\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\af\" -I      #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\low_level\srf04\single_ #
-#                          chip\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
-#                          oor ±∏∑›\Coor for ARM2.0                           #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
-#                          oor ±∏∑›\Coor for ARM2.0                           #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\osal\include\" -I "C:\Users\William\Desktop\±œ“µ #
-#                          …Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0                 #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\services\saddr\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\services\sdata\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\af\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
-#                          \SRC\coor ±∏∑›\Coor for ARM2.0                     #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\nwk\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sapi\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
-#                          º∆\SRC\coor ±∏∑›\Coor for ARM2.0                   #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sys\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\zdo\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
-#                          \coor ±∏∑›\Coor for ARM2.0                         #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\f8w\" -Ohz --require_prototypes             #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\nwk\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sapi\" -I    #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sec\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sys\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\zdo\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\zmac\" -I          #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\zmac\f8w\" -Ohz    #
+#                          --require_prototypes                               #
 #    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\List\mac_mcu.lst                        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\List\mac_mcu.lst               #
 #    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\Obj\mac_mcu.r51                         #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\Obj\mac_mcu.r51                #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Components\mac\low_level\srf04\single_chip\mac_mcu.c
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Components\mac\low_level\srf04\single_chip\mac_mcu.c
       1          /**************************************************************************************************
       2            Filename:       mac_mcu.c
       3            Revised:        $Date: 2012-03-07 16:55:44 -0800 (Wed, 07 Mar 2012) $
@@ -509,6 +514,9 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     163            /* Raises the CCA threshold from about -108 dBm to about -80 dBm input level.
     164             */
     165            CCACTRL0 = CCA_THR;
+   \   00001A   906196       MOV     DPTR,#0x6196
+   \   00001D   74FC         MOV     A,#-0x4
+   \   00001F   F0           MOVX    @DPTR,A
     166          #endif
     167          
     168          #ifdef CC2591_COMPRESSION_WORKAROUND
@@ -522,99 +530,99 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     176             * details available in datasheet.
     177             */
     178            MDMCTRL0 = 0x85;
-   \   00001A   9061A8       MOV     DPTR,#0x61a8
-   \   00001D   7485         MOV     A,#-0x7b
-   \   00001F   F0           MOVX    @DPTR,A
+   \   000020   9061A8       MOV     DPTR,#0x61a8
+   \   000023   7485         MOV     A,#-0x7b
+   \   000025   F0           MOVX    @DPTR,A
     179          #endif /* CC2591_COMPRESSION_WORKAROUND */
     180          
     181            if (*(uint8 *)(P_INFOPAGE+0x03) == 0x95)  // Device is a CC2533
-   \   000020   907803       MOV     DPTR,#0x7803
-   \   000023   E0           MOVX    A,@DPTR
-   \   000024   6495         XRL     A,#0x95
-   \   000026   7006         JNZ     ??macMcuInit_0
+   \   000026   907803       MOV     DPTR,#0x7803
+   \   000029   E0           MOVX    A,@DPTR
+   \   00002A   6495         XRL     A,#0x95
+   \   00002C   7006         JNZ     ??macMcuInit_0
     182            {
     183              /* In case the device is a 2533, just update the IVCTRL regoster which is 2533 specific */
     184              #define IVCTRL          XREG( 0x6265 )  
     185              IVCTRL = 0xF;
-   \   000028   906265       MOV     DPTR,#0x6265
-   \   00002B   740F         MOV     A,#0xf
-   \   00002D   F0           MOVX    @DPTR,A
+   \   00002E   906265       MOV     DPTR,#0x6265
+   \   000031   740F         MOV     A,#0xf
+   \   000033   F0           MOVX    @DPTR,A
     186            }
     187            /* Adjust current in VCO; details available in datasheet. */
     188            FSCAL1 = 0x00;
    \                     ??macMcuInit_0:
-   \   00002E   9061AE       MOV     DPTR,#0x61ae
-   \   000031   E4           CLR     A
-   \   000032   F0           MOVX    @DPTR,A
+   \   000034   9061AE       MOV     DPTR,#0x61ae
+   \   000037   E4           CLR     A
+   \   000038   F0           MOVX    @DPTR,A
     189          
     190            /* Adjust target value for AGC control loop; details available in datasheet. */
     191            AGCCTRL1 = 0x15;
-   \   000033   9061B2       MOV     DPTR,#0x61b2
-   \   000036   7415         MOV     A,#0x15
-   \   000038   F0           MOVX    @DPTR,A
+   \   000039   9061B2       MOV     DPTR,#0x61b2
+   \   00003C   7415         MOV     A,#0x15
+   \   00003E   F0           MOVX    @DPTR,A
     192          
     193            /* Disable source address matching an autopend for now */
     194            SRCMATCH = 0;
-   \   000039   906182       MOV     DPTR,#0x6182
-   \   00003C   E4           CLR     A
-   \   00003D   F0           MOVX    @DPTR,A
+   \   00003F   906182       MOV     DPTR,#0x6182
+   \   000042   E4           CLR     A
+   \   000043   F0           MOVX    @DPTR,A
     195          
     196            /* Tune ADC performance, details available in datasheet. */
     197            ADCTEST0 = 0x10;
-   \   00003E   9061B5       MOV     DPTR,#0x61b5
-   \   000041   7410         MOV     A,#0x10
-   \   000043   F0           MOVX    @DPTR,A
+   \   000044   9061B5       MOV     DPTR,#0x61b5
+   \   000047   7410         MOV     A,#0x10
+   \   000049   F0           MOVX    @DPTR,A
     198            ADCTEST1 = 0x0E;
-   \   000044   A3           INC     DPTR
-   \   000045   740E         MOV     A,#0xe
-   \   000047   F0           MOVX    @DPTR,A
+   \   00004A   A3           INC     DPTR
+   \   00004B   740E         MOV     A,#0xe
+   \   00004D   F0           MOVX    @DPTR,A
     199            ADCTEST2 = 0x03;
-   \   000048   A3           INC     DPTR
-   \   000049   7403         MOV     A,#0x3
-   \   00004B   F0           MOVX    @DPTR,A
+   \   00004E   A3           INC     DPTR
+   \   00004F   7403         MOV     A,#0x3
+   \   000051   F0           MOVX    @DPTR,A
     200          
     201            /* Sets TX anti-aliasing filter to appropriate bandwidth.
     202             * Reduces spurious emissions close to signal.
     203             */
     204            TXFILTCFG = TXFILTCFG_RESET_VALUE;
-   \   00004C   9061FA       MOV     DPTR,#0x61fa
-   \   00004F   7409         MOV     A,#0x9
-   \   000051   F0           MOVX    @DPTR,A
+   \   000052   9061FA       MOV     DPTR,#0x61fa
+   \   000055   7409         MOV     A,#0x9
+   \   000057   F0           MOVX    @DPTR,A
     205          
     206            /* disable the CSPT register compare function */
     207            CSPT = 0xFF;
-   \   000052   9061E5       MOV     DPTR,#0x61e5
-   \   000055   74FF         MOV     A,#-0x1
-   \   000057   F0           MOVX    @DPTR,A
+   \   000058   9061E5       MOV     DPTR,#0x61e5
+   \   00005B   74FF         MOV     A,#-0x1
+   \   00005D   F0           MOVX    @DPTR,A
     208          
     209            /* enable general RF interrupts */
     210            IEN2 |= RFIE;
-   \   000058   439A01       ORL     0x9a,#0x1
+   \   00005E   439A01       ORL     0x9a,#0x1
     211          
     212            /* enable general REERR interrupts */
     213            IEN0 |= RFERRIE;
-   \   00005B   D2A8         SETB    0xa8.0
+   \   000061   D2A8         SETB    0xa8.0
     214          
     215            /* set RF interrupts one notch above lowest priority (four levels available) */
     216            IP0 |=  IP_RFERR_RF_DMA_BV;
-   \   00005D   43A901       ORL     0xa9,#0x1
+   \   000063   43A901       ORL     0xa9,#0x1
     217            IP1 &= ~IP_RFERR_RF_DMA_BV;
-   \   000060   53B9FE       ANL     0xb9,#0xfe
+   \   000066   53B9FE       ANL     0xb9,#0xfe
     218          
     219            /* set T2 interrupts one notch above lowest priority (four levels available)
     220             * This effectively turned off nested interrupt between T2 and RF.
     221             */
     222            IP0 |=  IP_RXTX0_T2_BV;
-   \   000063   43A904       ORL     0xa9,#0x4
+   \   000069   43A904       ORL     0xa9,#0x4
     223            IP1 &= ~IP_RXTX0_T2_BV;
-   \   000066   53B9FB       ANL     0xb9,#0xfb
+   \   00006C   53B9FB       ANL     0xb9,#0xfb
     224          
     225            /* read chip version */
     226            macChipVersion = CHVER;
-   \   000069   906249       MOV     DPTR,#0x6249
-   \   00006C   E0           MOVX    A,@DPTR
-   \   00006D   90....       MOV     DPTR,#macChipVersion
-   \   000070   F0           MOVX    @DPTR,A
+   \   00006F   906249       MOV     DPTR,#0x6249
+   \   000072   E0           MOVX    A,@DPTR
+   \   000073   90....       MOV     DPTR,#macChipVersion
+   \   000076   F0           MOVX    @DPTR,A
     227          
     228            /*-------------------------------------------------------------------------------
     229             *  Initialize MAC timer.
@@ -622,38 +630,38 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     231          
     232            /* set timer rollover */
     233            HAL_ENTER_CRITICAL_SECTION(s);
-   \   000071   E5A8         MOV     A,0xa8
-   \   000073   C2AF         CLR     0xa8.7
+   \   000077   E5A8         MOV     A,0xa8
+   \   000079   C2AF         CLR     0xa8.7
     234            MAC_MCU_T2_ACCESS_PERIOD_VALUE();
-   \   000075   75C302       MOV     0xc3,#0x2
+   \   00007B   75C302       MOV     0xc3,#0x2
     235            T2M0 = MAC_RADIO_TIMER_TICKS_PER_BACKOFF() & 0xFF;
-   \   000078   75A200       MOV     0xa2,#0x0
+   \   00007E   75A200       MOV     0xa2,#0x0
     236            T2M1 = MAC_RADIO_TIMER_TICKS_PER_BACKOFF() >> 8;
-   \   00007B   75A328       MOV     0xa3,#0x28
+   \   000081   75A328       MOV     0xa3,#0x28
     237            HAL_EXIT_CRITICAL_SECTION(s);
-   \   00007E   A2E7         MOV     C,0xE0 /* A   */.7
-   \   000080   92AF         MOV     0xa8.7,C
+   \   000084   A2E7         MOV     C,0xE0 /* A   */.7
+   \   000086   92AF         MOV     0xa8.7,C
     238          
     239            /* start timer */
     240            MAC_RADIO_TIMER_WAKE_UP();
    \                     ??macMcuInit_1:
-   \   000082   E59E         MOV     A,0x9e
-   \   000084   70FC         JNZ     ??macMcuInit_1
-   \   000086   439403       ORL     0x94,#0x3
+   \   000088   E59E         MOV     A,0x9e
+   \   00008A   70FC         JNZ     ??macMcuInit_1
+   \   00008C   439403       ORL     0x94,#0x3
    \                     ??macMcuInit_2:
-   \   000089   E594         MOV     A,0x94
-   \   00008B   A2E2         MOV     C,0xE0 /* A   */.2
-   \   00008D   50FA         JNC     ??macMcuInit_2
+   \   00008F   E594         MOV     A,0x94
+   \   000091   A2E2         MOV     C,0xE0 /* A   */.2
+   \   000093   50FA         JNC     ??macMcuInit_2
     241          
     242            /* Enable latch mode and T2 SYNC start. OSAL timer is based on MAC timer. 
     243             * The SYNC start msut be on when POWER_SAVING is on for this design to work.
     244             */
     245            T2CTRL |= (LATCH_MODE | TIMER2_SYNC);
-   \   00008F   43940A       ORL     0x94,#0xa
+   \   000095   43940A       ORL     0x94,#0xa
     246            
     247            /* enable timer interrupts */
     248            T2IE = 1;
-   \   000092   D2BA         SETB    0xb8.2
+   \   000098   D2BA         SETB    0xb8.2
     249          
     250           /*----------------------------------------------------------------------------------------------
     251            *  Initialize random seed value.
@@ -664,14 +672,14 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     256             *  it will stay in receive mode regardless RF activity.
     257             */
     258            FRMCTRL0 = FRMCTRL0_RESET_VALUE | RX_MODE_INFINITE_RECEPTION;
-   \   000094   906189       MOV     DPTR,#0x6189
-   \   000097   7448         MOV     A,#0x48
-   \   000099   F0           MOVX    @DPTR,A
+   \   00009A   906189       MOV     DPTR,#0x6189
+   \   00009D   7448         MOV     A,#0x48
+   \   00009F   F0           MOVX    @DPTR,A
     259          
     260            /* turn on the receiver */
     261            macRxOn();
-   \   00009A                ; Setup parameters for call to function macRxOn
-   \   00009A   12....       LCALL   ??macRxOn?relay
+   \   0000A0                ; Setup parameters for call to function macRxOn
+   \   0000A0   12....       LCALL   ??macRxOn?relay
     262          
     263            /*
     264             *  Wait for radio to reach infinite reception state by checking RSSI valid flag.
@@ -679,10 +687,10 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     266             */
     267            while (!(RSSISTAT & 0x01));
    \                     ??macMcuInit_3:
-   \   00009D   906199       MOV     DPTR,#0x6199
-   \   0000A0   E0           MOVX    A,@DPTR
-   \   0000A1   A2E0         MOV     C,0xE0 /* A   */.0
-   \   0000A3   50F8         JNC     ??macMcuInit_3
+   \   0000A3   906199       MOV     DPTR,#0x6199
+   \   0000A6   E0           MOVX    A,@DPTR
+   \   0000A7   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0000A9   50F8         JNC     ??macMcuInit_3
     268          
     269            /* put 16 random bits into the seed value */
     270            {
@@ -690,35 +698,35 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     272              uint8  i;
     273          
     274              rndSeed = 0;
-   \   0000A5   7800         MOV     R0,#0x0
-   \   0000A7   7900         MOV     R1,#0x0
+   \   0000AB   7800         MOV     R0,#0x0
+   \   0000AD   7900         MOV     R1,#0x0
     275          
     276              for(i=0; i<16; i++)
-   \   0000A9   7C10         MOV     R4,#0x10
+   \   0000AF   7C10         MOV     R4,#0x10
     277              {
     278                /* use most random bit of analog to digital receive conversion to populate the random seed */
     279                rndSeed = (rndSeed << 1) | (RFRND & 0x01);
    \                     ??macMcuInit_4:
-   \   0000AB   E8           MOV     A,R0
-   \   0000AC   C3           CLR     C
-   \   0000AD   33           RLC     A
-   \   0000AE   F8           MOV     R0,A
-   \   0000AF   E9           MOV     A,R1
-   \   0000B0   33           RLC     A
-   \   0000B1   F9           MOV     R1,A
-   \   0000B2   9061A7       MOV     DPTR,#0x61a7
-   \   0000B5   E0           MOVX    A,@DPTR
-   \   0000B6   A2E0         MOV     C,0xE0 /* A   */.0
-   \   0000B8   E4           CLR     A
-   \   0000B9   33           RLC     A
-   \   0000BA   FA           MOV     R2,A
-   \   0000BB   E8           MOV     A,R0
-   \   0000BC   4A           ORL     A,R2
-   \   0000BD   F8           MOV     R0,A
+   \   0000B1   E8           MOV     A,R0
+   \   0000B2   C3           CLR     C
+   \   0000B3   33           RLC     A
+   \   0000B4   F8           MOV     R0,A
+   \   0000B5   E9           MOV     A,R1
+   \   0000B6   33           RLC     A
+   \   0000B7   F9           MOV     R1,A
+   \   0000B8   9061A7       MOV     DPTR,#0x61a7
+   \   0000BB   E0           MOVX    A,@DPTR
+   \   0000BC   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0000BE   E4           CLR     A
+   \   0000BF   33           RLC     A
+   \   0000C0   FA           MOV     R2,A
+   \   0000C1   E8           MOV     A,R0
+   \   0000C2   4A           ORL     A,R2
+   \   0000C3   F8           MOV     R0,A
     280              }
-   \   0000BE   1C           DEC     R4
-   \   0000BF   EC           MOV     A,R4
-   \   0000C0   70E9         JNZ     ??macMcuInit_4
+   \   0000C4   1C           DEC     R4
+   \   0000C5   EC           MOV     A,R4
+   \   0000C6   70E9         JNZ     ??macMcuInit_4
     281          
     282              /*
     283               *  The seed value must not be zero or 0x0380 (0x8003 in the polynomial).  If it is, the psuedo
@@ -726,21 +734,21 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     285               *  be zero or 0x0380.  The following check makes sure this does not happen.
     286               */
     287              if (rndSeed == 0x0000 || rndSeed == 0x0380)
-   \   0000C2   E8           MOV     A,R0
-   \   0000C3   49           ORL     A,R1
-   \   0000C4   600A         JZ      ??macMcuInit_5
-   \   0000C6   7480         MOV     A,#-0x80
-   \   0000C8   68           XRL     A,R0
-   \   0000C9   7003         JNZ     ??macMcuInit_6
-   \   0000CB   7403         MOV     A,#0x3
-   \   0000CD   69           XRL     A,R1
+   \   0000C8   E8           MOV     A,R0
+   \   0000C9   49           ORL     A,R1
+   \   0000CA   600A         JZ      ??macMcuInit_5
+   \   0000CC   7480         MOV     A,#-0x80
+   \   0000CE   68           XRL     A,R0
+   \   0000CF   7003         JNZ     ??macMcuInit_6
+   \   0000D1   7403         MOV     A,#0x3
+   \   0000D3   69           XRL     A,R1
    \                     ??macMcuInit_6:
-   \   0000CE   7004         JNZ     ??macMcuInit_7
+   \   0000D4   7004         JNZ     ??macMcuInit_7
     288              {
     289                rndSeed = 0xBABE; /* completely arbitrary "random" value */
    \                     ??macMcuInit_5:
-   \   0000D0   78BE         MOV     R0,#-0x42
-   \   0000D2   79BA         MOV     R1,#-0x46
+   \   0000D6   78BE         MOV     R0,#-0x42
+   \   0000D8   79BA         MOV     R1,#-0x46
     290              }
     291          
     292              /*
@@ -749,141 +757,141 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     295               */
     296              RNDL = rndSeed & 0xFF;
    \                     ??macMcuInit_7:
-   \   0000D4   E8           MOV     A,R0
-   \   0000D5   F5BC         MOV     0xbc,A
+   \   0000DA   E8           MOV     A,R0
+   \   0000DB   F5BC         MOV     0xbc,A
     297              RNDL = rndSeed >> 8;
-   \   0000D7   E9           MOV     A,R1
-   \   0000D8   F5BC         MOV     0xbc,A
+   \   0000DD   E9           MOV     A,R1
+   \   0000DE   F5BC         MOV     0xbc,A
     298            }
     299          
     300            /* Read 16*8 random bits and store them in flash for future use in random
     301               key generation for CBKE key establishment */
     302            if( pRandomSeedCB )
-   \   0000DA   90....       MOV     DPTR,#pRandomSeedCB
-   \   0000DD   E0           MOVX    A,@DPTR
-   \   0000DE   F8           MOV     R0,A
-   \   0000DF   A3           INC     DPTR
-   \   0000E0   E0           MOVX    A,@DPTR
-   \   0000E1   F9           MOV     R1,A
-   \   0000E2   E8           MOV     A,R0
-   \   0000E3   49           ORL     A,R1
-   \   0000E4   604C         JZ      ??macMcuInit_8
+   \   0000E0   90....       MOV     DPTR,#pRandomSeedCB
+   \   0000E3   E0           MOVX    A,@DPTR
+   \   0000E4   F8           MOV     R0,A
+   \   0000E5   A3           INC     DPTR
+   \   0000E6   E0           MOVX    A,@DPTR
+   \   0000E7   F9           MOV     R1,A
+   \   0000E8   E8           MOV     A,R0
+   \   0000E9   49           ORL     A,R1
+   \   0000EA   604C         JZ      ??macMcuInit_8
     303            {
     304              uint8 randomSeed[MAC_RANDOM_SEED_LEN];
     305              uint8 i,j;
     306          
     307              for(i = 0; i < 16; i++)
-   \   0000E6   7800         MOV     R0,#0x0
+   \   0000EC   7800         MOV     R0,#0x0
     308              {
     309                uint8 rndByte = 0;
    \                     ??macMcuInit_9:
-   \   0000E8   7B00         MOV     R3,#0x0
+   \   0000EE   7B00         MOV     R3,#0x0
     310                for(j = 0; j < 8; j++)
-   \   0000EA   7A08         MOV     R2,#0x8
+   \   0000F0   7A08         MOV     R2,#0x8
     311                {
     312                  /* use most random bit of analog to digital receive conversion to
     313                     populate the random seed */
     314                  rndByte = (rndByte << 1) | (RFRND & 0x01);
    \                     ??macMcuInit_10:
-   \   0000EC   9061A7       MOV     DPTR,#0x61a7
-   \   0000EF   E0           MOVX    A,@DPTR
-   \   0000F0   A2E0         MOV     C,0xE0 /* A   */.0
-   \   0000F2   E4           CLR     A
-   \   0000F3   33           RLC     A
-   \   0000F4   F9           MOV     R1,A
-   \   0000F5   EB           MOV     A,R3
-   \   0000F6   33           RLC     A
-   \   0000F7   49           ORL     A,R1
-   \   0000F8   FB           MOV     R3,A
+   \   0000F2   9061A7       MOV     DPTR,#0x61a7
+   \   0000F5   E0           MOVX    A,@DPTR
+   \   0000F6   A2E0         MOV     C,0xE0 /* A   */.0
+   \   0000F8   E4           CLR     A
+   \   0000F9   33           RLC     A
+   \   0000FA   F9           MOV     R1,A
+   \   0000FB   EB           MOV     A,R3
+   \   0000FC   33           RLC     A
+   \   0000FD   49           ORL     A,R1
+   \   0000FE   FB           MOV     R3,A
     315                }
-   \   0000F9   1A           DEC     R2
-   \   0000FA   EA           MOV     A,R2
-   \   0000FB   70EF         JNZ     ??macMcuInit_10
+   \   0000FF   1A           DEC     R2
+   \   000100   EA           MOV     A,R2
+   \   000101   70EF         JNZ     ??macMcuInit_10
     316                randomSeed[i] = rndByte;
-   \   0000FD   88..         MOV     ?V0 + 0,R0
-   \   0000FF   85..82       MOV     DPL,?XSP + 0
-   \   000102   85..83       MOV     DPH,?XSP + 1
-   \   000105   E582         MOV     A,DPL
-   \   000107   25..         ADD     A,?V0 + 0
-   \   000109   F582         MOV     DPL,A
-   \   00010B   E583         MOV     A,DPH
-   \   00010D   3400         ADDC    A,#0x0
-   \   00010F   F583         MOV     DPH,A
-   \   000111   EB           MOV     A,R3
-   \   000112   F0           MOVX    @DPTR,A
+   \   000103   88..         MOV     ?V0 + 0,R0
+   \   000105   85..82       MOV     DPL,?XSP + 0
+   \   000108   85..83       MOV     DPH,?XSP + 1
+   \   00010B   E582         MOV     A,DPL
+   \   00010D   25..         ADD     A,?V0 + 0
+   \   00010F   F582         MOV     DPL,A
+   \   000111   E583         MOV     A,DPH
+   \   000113   3400         ADDC    A,#0x0
+   \   000115   F583         MOV     DPH,A
+   \   000117   EB           MOV     A,R3
+   \   000118   F0           MOVX    @DPTR,A
     317          
     318              }
-   \   000113   08           INC     R0
-   \   000114   E8           MOV     A,R0
-   \   000115   C3           CLR     C
-   \   000116   9410         SUBB    A,#0x10
-   \   000118   40CE         JC      ??macMcuInit_9
+   \   000119   08           INC     R0
+   \   00011A   E8           MOV     A,R0
+   \   00011B   C3           CLR     C
+   \   00011C   9410         SUBB    A,#0x10
+   \   00011E   40CE         JC      ??macMcuInit_9
     319              pRandomSeedCB( randomSeed );
-   \   00011A                ; Setup parameters for indirect call
-   \   00011A   85..82       MOV     DPL,?XSP + 0
-   \   00011D   85..83       MOV     DPH,?XSP + 1
-   \   000120   AA82         MOV     R2,DPL
-   \   000122   AB83         MOV     R3,DPH
-   \   000124   90....       MOV     DPTR,#pRandomSeedCB
-   \   000127   E0           MOVX    A,@DPTR
-   \   000128   F8           MOV     R0,A
-   \   000129   A3           INC     DPTR
-   \   00012A   E0           MOVX    A,@DPTR
-   \   00012B   F583         MOV     DPH,A
-   \   00012D   8882         MOV     DPL,R0
-   \   00012F   12....       LCALL   ?CALL_IND
+   \   000120                ; Setup parameters for indirect call
+   \   000120   85..82       MOV     DPL,?XSP + 0
+   \   000123   85..83       MOV     DPH,?XSP + 1
+   \   000126   AA82         MOV     R2,DPL
+   \   000128   AB83         MOV     R3,DPH
+   \   00012A   90....       MOV     DPTR,#pRandomSeedCB
+   \   00012D   E0           MOVX    A,@DPTR
+   \   00012E   F8           MOV     R0,A
+   \   00012F   A3           INC     DPTR
+   \   000130   E0           MOVX    A,@DPTR
+   \   000131   F583         MOV     DPH,A
+   \   000133   8882         MOV     DPL,R0
+   \   000135   12....       LCALL   ?CALL_IND
     320            }
     321          
     322            /* turn off the receiver */
     323            macRxOff();
    \                     ??macMcuInit_8:
-   \   000132                ; Setup parameters for call to function macRxOff
-   \   000132   12....       LCALL   ??macRxOff?relay
+   \   000138                ; Setup parameters for call to function macRxOff
+   \   000138   12....       LCALL   ??macRxOff?relay
     324          
     325            /* take receiver out of infinite reception mode; set back to normal operation */
     326            FRMCTRL0 = FRMCTRL0_RESET_VALUE | RX_MODE_NORMAL_OPERATION;
-   \   000135   906189       MOV     DPTR,#0x6189
-   \   000138   7440         MOV     A,#0x40
-   \   00013A   F0           MOVX    @DPTR,A
+   \   00013B   906189       MOV     DPTR,#0x6189
+   \   00013E   7440         MOV     A,#0x40
+   \   000140   F0           MOVX    @DPTR,A
     327          
     328            /* Turn on autoack */
     329            MAC_RADIO_TURN_ON_AUTO_ACK();
-   \   00013B   E0           MOVX    A,@DPTR
-   \   00013C   D2E5         SETB    0xE0 /* A   */.5
-   \   00013E   F0           MOVX    @DPTR,A
+   \   000141   E0           MOVX    A,@DPTR
+   \   000142   D2E5         SETB    0xE0 /* A   */.5
+   \   000144   F0           MOVX    @DPTR,A
     330          
     331            /* Initialize SRCEXTPENDEN and SRCSHORTPENDEN to zeros */
     332            MAC_RADIO_SRC_MATCH_INIT_EXTPENDEN();
-   \   00013F   906164       MOV     DPTR,#0x6164
-   \   000142   E4           CLR     A
-   \   000143   F0           MOVX    @DPTR,A
-   \   000144   A3           INC     DPTR
-   \   000145   F0           MOVX    @DPTR,A
-   \   000146   A3           INC     DPTR
-   \   000147   F0           MOVX    @DPTR,A
-    333            MAC_RADIO_SRC_MATCH_INIT_SHORTPENDEN();
-   \   000148   A3           INC     DPTR
+   \   000145   906164       MOV     DPTR,#0x6164
+   \   000148   E4           CLR     A
    \   000149   F0           MOVX    @DPTR,A
    \   00014A   A3           INC     DPTR
    \   00014B   F0           MOVX    @DPTR,A
    \   00014C   A3           INC     DPTR
    \   00014D   F0           MOVX    @DPTR,A
+    333            MAC_RADIO_SRC_MATCH_INIT_SHORTPENDEN();
+   \   00014E   A3           INC     DPTR
+   \   00014F   F0           MOVX    @DPTR,A
+   \   000150   A3           INC     DPTR
+   \   000151   F0           MOVX    @DPTR,A
+   \   000152   A3           INC     DPTR
+   \   000153   F0           MOVX    @DPTR,A
     334          }
-   \   00014E   7410         MOV     A,#0x10
-   \   000150   12....       LCALL   ?DEALLOC_XSTACK8
-   \   000153   7F02         MOV     R7,#0x2
-   \   000155   02....       LJMP    ?BANKED_LEAVE_XDATA
-   \   000158                REQUIRE IEN2
-   \   000158                REQUIRE _A_IEN0
-   \   000158                REQUIRE IP0
-   \   000158                REQUIRE IP1
-   \   000158                REQUIRE T2MSEL
-   \   000158                REQUIRE T2M0
-   \   000158                REQUIRE T2M1
-   \   000158                REQUIRE CLKCONSTA
-   \   000158                REQUIRE T2CTRL
-   \   000158                REQUIRE _A_IEN1
-   \   000158                REQUIRE RNDL
+   \   000154   7410         MOV     A,#0x10
+   \   000156   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000159   7F02         MOV     R7,#0x2
+   \   00015B   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   00015E                REQUIRE IEN2
+   \   00015E                REQUIRE _A_IEN0
+   \   00015E                REQUIRE IP0
+   \   00015E                REQUIRE IP1
+   \   00015E                REQUIRE T2MSEL
+   \   00015E                REQUIRE T2M0
+   \   00015E                REQUIRE T2M1
+   \   00015E                REQUIRE CLKCONSTA
+   \   00015E                REQUIRE T2CTRL
+   \   00015E                REQUIRE _A_IEN1
+   \   00015E                REQUIRE RNDL
     335          
     336          
     337          /**************************************************************************************************
@@ -2572,7 +2580,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
      pRandomSeedCB                             2
      MAC_SetRandomSeedCB                      14
      ??Subroutine10_0                          7
-     macMcuInit                              344
+     macMcuInit                              350
      macMcuRandomByte                         13
      macMcuRandomWord                         19
      macMcuTimerForceDelay                    22
@@ -2626,7 +2634,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
      ??macMcuAccumulatedOverFlow?relay         6
 
  
- 1 333 bytes in segment BANKED_CODE
+ 1 339 bytes in segment BANKED_CODE
     96 bytes in segment BANK_RELAYS
      9 bytes in segment INTVEC
    242 bytes in segment NEAR_CODE
@@ -2634,7 +2642,7 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
      8 bytes in segment XDATA_ROM_C
     17 bytes in segment XDATA_Z
  
- 1 671 bytes of CODE  memory (+  9 bytes shared)
+ 1 677 bytes of CODE  memory (+  9 bytes shared)
      0 bytes of CONST memory (+  8 bytes shared)
      0 bytes of DATA  memory (+ 22 bytes shared)
     17 bytes of XDATA memory

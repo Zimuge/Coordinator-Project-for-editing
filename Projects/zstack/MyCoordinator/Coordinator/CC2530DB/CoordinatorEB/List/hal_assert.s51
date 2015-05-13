@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        20/Apr/2015  13:47:32 /
+// IAR C/C++ Compiler V8.10.1.10194/W32 for 8051        12/May/2015  19:18:34 /
 // Copyright 2004-2011 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -10,19 +10,20 @@
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
 //    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Com /
-//                          ponents\hal\common\hal_assert.c                   /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Components\hal\common\hal_assert.c          /
 //    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\Tools\CC2530DB\f8wCoord.cfg" (-DCPU32MHZ  /
-//                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TR /
-//                          UE -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8     /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"     /
+//                          (-DCPU32MHZ -DROOT=__near_func                    /
+//                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                  /
+//                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8        /
 //                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)   /
 //                          -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\Tools\CC2530DB\f8wConfig.cfg"             /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"    /
 //                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0     /
 //                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000         /
 //                          -DZDAPP_CONFIG_PAN_ID=0x0030                      /
@@ -46,113 +47,116 @@
 //                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
 //                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\ /
-//                          ±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0            /
-//                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Components\hal\common\ha /
-//                          l_assert.c" -D ZTOOL_P1 -D NV_RESTORE=1 -lC       /
+//                          ±œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM           /
+//                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Components\hal\c /
+//                          ommon\hal_assert.c" -D ZTOOL_P1 -D NV_RESTORE=1   /
+//                          -lC "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor   /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\CoordinatorEB\List\" -lA                  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\" -lA                           /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\" --diag_suppress Pe001,Pa010   /
-//                          -o "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\Obj\" -e --no_code_motion --debug    /
-//                          --core=plain --dptr=16,1 --data_model=large       /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\CoordinatorEB\List\" --diag_suppress      /
+//                          Pe001,Pa010 -o "C:\Users\William\Desktop\±œ“µ…Ëº∆ /
+//                          \SRC\coor ±∏∑›\ARM\Coor for ARM                   /
+//                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\CoordinatorEB\ /
+//                          Obj\" -e --no_code_motion --debug --core=plain    /
+//                          --dptr=16,1 --data_model=large                    /
 //                          --code_model=banked --calling_convention=xdata_re /
 //                          entrant --place_constants=data_rom                /
 //                          --nr_virtual_regs 16 -I                           /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\" /
-//                           -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor   /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\Source\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\ /
-//                          SRC\coor ±∏∑›\Coor for ARM2.0                     /
-//                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\ZMain\TI2530D /
-//                          B\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coo /
-//                          r ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\P /
-//                          rojects\zstack\MyCoordinator\Coordinator\CC2530DB /
-//                          \..\..\..\..\..\Components\hal\include\" -I       /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\hal\target\CC2530EB\"    /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\S /
+//                          RC\coor ±∏∑›\ARM\Coor for ARM                     /
+//                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\Source\"    /
 //                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\include\" -I         /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\ZMain\TI2530DB\" -I              /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\high_level\" -I      /
-//                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\low_level\srf04\"    /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\hal\include\"   /
 //                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\mac\low_level\srf04\sing /
-//                          le_chip\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\S /
-//                          RC\coor ±∏∑›\Coor for ARM2.0                      /
-//                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SR /
-//                          C\coor ±∏∑›\Coor for ARM2.0                       /
-//                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\osal\include\" -I "C:\Users\William\Desktop\± /
-//                          œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0             /
-//                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordi /
-//                          nator\Coordinator\CC2530DB\..\..\..\..\..\Compone /
-//                          nts\services\saddr\" -I                           /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\hal\target\CC25 /
+//                          30EB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
+//                          coor ±∏∑›\ARM\Coor for ARM                        /
+//                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\..\..\..\.. /
+//                          \Components\mac\include\" -I                      /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\services\sdata\" -I      /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mac\high_level\ /
+//                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor  /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mac\low_level\s /
+//                          rf04\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ /
+//                          coor ±∏∑›\ARM\Coor for ARM                        /
+//                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\ /
+//                          MyCoordinator\Coordinator\CC2530DB\..\..\..\..\.. /
+//                          \Components\mac\low_level\srf04\single_chip\" -I  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\af\" -I            /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\mt\" -I         /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\nwk\" -I           /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\osal\include\"  /
+//                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\services\saddr\ /
+//                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor  /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\services\sdata\ /
+//                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor  /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\af\" -I   /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sapi\" -I          /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\nwk\" -I  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sec\" -I           /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sapi\"    /
+//                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor    /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sec\" -I  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sys\" -I           /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\sys\" -I  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\zdo\" -I           /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\stack\zdo\" -I  /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\zmac\" -I                /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\zmac\" -I       /
 //                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor       /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\. /
-//                          .\..\..\..\..\Components\zmac\f8w\" -Ohz          /
-//                          --require_prototypes                              /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\..\..\..\..\..\Components\zmac\f8w\"      /
+//                          -Ohz --require_prototypes                         /
 //    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        /
-//                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Pro /
-//                          jects\zstack\MyCoordinator\Coordinator\CC2530DB\C /
-//                          oordinatorEB\List\hal_assert.s51                  /
+//                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  /
+//                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\C /
+//                          C2530DB\CoordinatorEB\List\hal_assert.s51         /
 //                                                                            /
 //                                                                            /
 ///////////////////////////////////////////////////////////////////////////////
@@ -178,8 +182,10 @@
 
         EXTERN ?ALLOC_XSTACK8
         EXTERN ?BANKED_ENTER_XDATA
+        EXTERN ?BANKED_LEAVE_XDATA
         EXTERN ?BDISPATCH
         EXTERN ?BRET
+        EXTERN ?DEALLOC_XSTACK8
         EXTERN ?L_ADD_TO_X
         EXTERN ?L_MOV_X
         EXTERN ?S_SHL
@@ -189,6 +195,7 @@
         EXTERN ?XSP
         EXTERN ?XSTACK_DISP0_8
         EXTERN ?XSTORE_R2345
+        EXTERN __INIT_XDATA_Z
 
         PUBLIC ??halAssertHandler?relay
         FUNCTION ??halAssertHandler?relay,0203H
@@ -196,7 +203,6 @@
         FUNCTION ??halAssertHazardLights?relay,0203H
         PUBWEAK CLKCONCMD
         PUBWEAK CLKCONSTA
-        PUBWEAK P0DIR
         PUBWEAK P0INP
         PUBWEAK P1DIR
         PUBWEAK SLEEPCMD
@@ -212,7 +218,7 @@
         ARGFRAME XSTACK, 0, STACK
         LOCFRAME ISTACK, 2, STACK
         PUBLIC halAssertHazardLights
-        FUNCTION halAssertHazardLights,0a1203H
+        FUNCTION halAssertHazardLights,080203H
         ARGFRAME XSTACK, 0, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
@@ -374,26 +380,15 @@
         CFI ?RET_LOW Frame(CFA_SP, 1)
         CFI EndCommon cfiCommon1
         
-MAC_RfFrontendSetup SYMBOL "MAC_RfFrontendSetup"
-??MAC_RfFrontendSetup?relay SYMBOL "?relay", MAC_RfFrontendSetup
 halAssertHandler    SYMBOL "halAssertHandler"
 ??halAssertHandler?relay SYMBOL "?relay", halAssertHandler
 halAssertHazardLights SYMBOL "halAssertHazardLights"
 ??halAssertHazardLights?relay SYMBOL "?relay", halAssertHazardLights
 
-        EXTERN MAC_RfFrontendSetup
-        FUNCTION MAC_RfFrontendSetup,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 22, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN ??MAC_RfFrontendSetup?relay
-        FUNCTION ??MAC_RfFrontendSetup?relay,00H
         EXTERN macRxActive
         EXTERN macTxActive
 
-// C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Components\hal\common\hal_assert.c
+// C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Components\hal\common\hal_assert.c
 //    1 /**************************************************************************************************
 //    2   Filename:       hal_assert.c
 //    3   Revised:        $Date: 2010-11-22 08:13:43 -0800 (Mon, 22 Nov 2010) $
@@ -487,12 +482,6 @@ SLEEPCMD:
         ASEGN SFR_AN:DATA:NOROOT,0c6H
 // unsigned char volatile __sfr CLKCONCMD
 CLKCONCMD:
-        DATA8
-        DS 1
-
-        ASEGN SFR_AN:DATA:NOROOT,0fdH
-// unsigned char volatile __sfr P0DIR
-P0DIR:
         DATA8
         DS 1
 
@@ -594,17 +583,6 @@ halAssertHazardLights:
         CFI Function halAssertHazardLights
         CODE
 //   99 {
-        FUNCALL halAssertHazardLights, MAC_RfFrontendSetup
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 22, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 22, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         MOV     A,#-0xc
         LCALL   ?BANKED_ENTER_XDATA
         CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
@@ -681,18 +659,20 @@ halAssertHazardLights:
         MOV     DPTR,#0x6270
         MOV     A,#0x8
         MOVX    @DPTR,A
+        CLR     0x90.0
         ORL     0xfe,#0x1
-        ORL     0xfd,#0x80
+        CLR     0x90.1
+        ORL     0xfe,#0x2
+        CLR     0x90.4
+        ORL     0xfe,#0x10
         ORL     0x8f,#0x1
-        ; Setup parameters for call to function MAC_RfFrontendSetup
-        LCALL   ??MAC_RfFrontendSetup?relay
 //  127 
 //  128   HAL_TURN_OFF_LED1();
         CLR     0x90.0
 //  129   HAL_TURN_OFF_LED2();
-        CLR     0x90.0
+        CLR     0x90.1
 //  130   HAL_TURN_OFF_LED3();
-        CLR     0x90.0
+        CLR     0x90.4
 //  131   HAL_TURN_OFF_LED4();
         SJMP    ??halAssertHazardLights_3
 //  132 
@@ -910,6 +890,32 @@ halAssertHazardLights:
 ??halAssertHazardLights_11:
         SETB    0x90.0
 ??halAssertHazardLights_12:
+        MOV     C,0x90.1
+        JNC     ??halAssertHazardLights_13
+        CLR     0x90.1
+        SJMP    ??halAssertHazardLights_14
+??halAssertHazardLights_13:
+        SETB    0x90.1
+??halAssertHazardLights_14:
+        MOV     C,0x90.4
+        JNC     ??halAssertHazardLights_15
+        CLR     0x90.4
+        SJMP    ??halAssertHazardLights_16
+??halAssertHazardLights_15:
+        SETB    0x90.4
+??halAssertHazardLights_16:
+        MOV     DPTR,#??escape
+        MOVX    A,@DPTR
+        JZ      ??halAssertHazardLights_17
+        CLR     A
+        MOVX    @DPTR,A
+        MOV     A,#0xa
+        LCALL   ?DEALLOC_XSTACK8
+        CFI CFA_XSP16 add(XSP16, 12)
+        MOV     R7,#0x4
+        LJMP    ?BANKED_LEAVE_XDATA
+        CFI CFA_XSP16 add(XSP16, 22)
+??halAssertHazardLights_17:
         MOV     C,0x80.1
         JNC     ??halAssertHazardLights_7
         INC     R1
@@ -917,20 +923,20 @@ halAssertHazardLights:
         XRL     A,R1
         JNZ     ??halAssertHazardLights_8
         CLR     0x90.0
-        CLR     0x90.0
-        CLR     0x90.0
+        CLR     0x90.1
+        CLR     0x90.4
         CLR     0x90.0
         MOV     R0,#0x0
         MOV     R1,#0x0
-??halAssertHazardLights_13:
+??halAssertHazardLights_18:
         MOV     C,0x80.1
-        JNC     ??halAssertHazardLights_14
+        JNC     ??halAssertHazardLights_19
         MOV     R0,#0x0
         MOV     R1,#0x0
-??halAssertHazardLights_14:
+??halAssertHazardLights_19:
         LCALL   ?Subroutine0 & 0xFFFF
 ??CrossCallReturnLabel_0:
-        JC      ??halAssertHazardLights_13
+        JC      ??halAssertHazardLights_18
         MOV     DPTR,#0x61a3
         MOVX    A,@DPTR
         PUSH    A
@@ -973,29 +979,29 @@ halAssertHazardLights:
         MOV     C,0x80.1
         JNC     ??halAssertHazardLights_6
         SETB    0x90.0
-        SETB    0x90.0
-        SETB    0x90.0
+        SETB    0x90.1
+        SETB    0x90.4
         MOV     A,R3
-        JNZ     ??halAssertHazardLights_15
+        JNZ     ??halAssertHazardLights_20
         SETB    0x90.0
-        SJMP    ??halAssertHazardLights_16
-??halAssertHazardLights_15:
+        SJMP    ??halAssertHazardLights_21
+??halAssertHazardLights_20:
         CLR     0x90.0
-??halAssertHazardLights_16:
+??halAssertHazardLights_21:
         MOV     R0,#0x0
         MOV     R1,#0x0
-??halAssertHazardLights_17:
+??halAssertHazardLights_22:
         MOV     C,0x80.1
-        JNC     ??halAssertHazardLights_18
+        JNC     ??halAssertHazardLights_23
         MOV     R0,#0x0
         MOV     R1,#0x0
-??halAssertHazardLights_18:
+??halAssertHazardLights_23:
         LCALL   ?Subroutine0 & 0xFFFF
 ??CrossCallReturnLabel_1:
-        JC      ??halAssertHazardLights_17
+        JC      ??halAssertHazardLights_22
         CLR     0x90.0
-        CLR     0x90.0
-        CLR     0x90.0
+        CLR     0x90.1
+        CLR     0x90.4
         CLR     0x90.0
         MOV     ?V0 + 0,#0x1
         MOV     ?V0 + 1,#0x0
@@ -1025,10 +1031,9 @@ halAssertHazardLights:
         REQUIRE SLEEPSTA
         REQUIRE CLKCONCMD
         REQUIRE CLKCONSTA
-        REQUIRE P1DIR
-        REQUIRE P0DIR
-        REQUIRE P0INP
         REQUIRE _A_P1
+        REQUIRE P1DIR
+        REQUIRE P0INP
         REQUIRE _A_P0
 //  289   }
 //  290 }
@@ -1091,6 +1096,12 @@ halAssertHazardLights:
         CFI EndBlock cfiCond3
         CFI EndBlock cfiPicker4
 
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+??escape:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA32
 __Constant_0:
@@ -1138,14 +1149,16 @@ __Constant_5800:
 //  307 /**************************************************************************************************
 //  308 */
 // 
-// 396 bytes in segment BANKED_CODE
+// 440 bytes in segment BANKED_CODE
 //  12 bytes in segment BANK_RELAYS
-//  10 bytes in segment SFR_AN
+//   9 bytes in segment SFR_AN
 //  12 bytes in segment XDATA_ROM_C
+//   1 byte  in segment XDATA_Z
 // 
-// 408 bytes of CODE  memory
+// 452 bytes of CODE  memory
 //   0 bytes of CONST memory (+ 12 bytes shared)
-//   0 bytes of DATA  memory (+ 10 bytes shared)
+//   0 bytes of DATA  memory (+  9 bytes shared)
+//   1 byte  of XDATA memory
 //
 //Errors: none
 //Warnings: none

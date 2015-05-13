@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         20/Apr/2015  13:47:32 #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         12/May/2015  19:18:23 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -10,21 +10,22 @@
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
 #    Source file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\ZMain\TI2530DB\ZMain.c                 #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\ZMain\TI2530DB\ZMain.c        #
 #    Command line       =  -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\Tools\CC2530DB\f8wCoord.cfg" (-DCPU32MHZ     #
-#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
-#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"        #
+#                          (-DCPU32MHZ -DROOT=__near_func                     #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
 #                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
 #                          -f "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\Tools\CC2530DB\f8wConfig.cfg" (-DZIGBEEPRO   #
-#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
-#                          -DDEFAULT_CHANLIST=0x02000000                      #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"       #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x02000000          #
 #                          -DZDAPP_CONFIG_PAN_ID=0x0030                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
 #                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
@@ -46,121 +47,124 @@
 #                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
 #                          -DREJOIN_POLL_RATE=440 "C:\Users\William\Desktop\± #
-#                          œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0              #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\ZMain\TI2 #
-#                          530DB\ZMain.c" -D ZTOOL_P1 -D NV_RESTORE=1 -lC     #
+#                          œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM             #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\Z #
+#                          Main\TI2530DB\ZMain.c" -D ZTOOL_P1 -D              #
+#                          NV_RESTORE=1 -lC "C:\Users\William\Desktop\±œ“µ…Ëº #
+#                          ∆\SRC\coor ±∏∑›\ARM\Coor for ARM                   #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\CoordinatorEB\Li #
+#                          st\" -lA "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\co #
+#                          or ±∏∑›\ARM\Coor for ARM                           #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\CoordinatorEB\Li #
+#                          st\" --diag_suppress Pe001,Pa010 -o                #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\List\" -lA "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\CoordinatorEB\List\"     #
-#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\Obj\" -e --no_code_motion      #
+#                          --debug --core=plain --dptr=16,1                   #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\ #
+#                          coor ±∏∑›\ARM\Coor for ARM                         #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\Source\" -I   #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\Obj\" -e --no_code_motion --debug       #
-#                          --core=plain --dptr=16,1 --data_model=large        #
-#                          --code_model=banked --calling_convention=xdata_ree #
-#                          ntrant --place_constants=data_rom                  #
-#                          --nr_virtual_regs 16 -I "C:\Users\William\Desktop\ #
-#                          ±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0             #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\" -I                     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\ZMain\TI2530DB\" -I                 #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          Source\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
-#                          \coor ±∏∑›\Coor for ARM2.0                         #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\ZMain\TI2530DB\ #
-#                          " -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor   #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\hal\include\" -I            #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\hal\include\" -I   #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\hal\target\CC2530EB\" -I    #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\hal\target\CC2530E #
+#                          B\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor #
+#                           ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  #
+#                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC #
+#                          2530DB\..\..\..\..\..\Components\mac\include\" -I  #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\include\" -I            #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\mac\high_level\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\mac\low_level\srf0 #
+#                          4\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor #
+#                           ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ  #
+#                          ˝æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC #
+#                          2530DB\..\..\..\..\..\Components\mac\low_level\srf #
+#                          04\single_chip\" -I "C:\Users\William\Desktop\±œ“µ #
+#                          …Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM                #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\..\..\..\..\C #
+#                          omponents\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
+#                          º∆\SRC\coor ±∏∑›\ARM\Coor for ARM                  #
+#                          3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\M #
+#                          yCoordinator\Coordinator\CC2530DB\..\..\..\..\..\C #
+#                          omponents\osal\include\" -I                        #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\high_level\" -I         #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\services\saddr\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\services\sdata\"   #
+#                          -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor     #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\af\" -I      #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\low_level\srf04\" -I    #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\nwk\" -I     #
 #                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\..\ #
-#                          ..\..\..\..\Components\mac\low_level\srf04\single_ #
-#                          chip\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
-#                          oor ±∏∑›\Coor for ARM2.0                           #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\mt\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\c #
-#                          oor ±∏∑›\Coor for ARM2.0                           #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\osal\include\" -I "C:\Users\William\Desktop\±œ“µ #
-#                          …Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0                 #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\services\saddr\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\services\sdata\" -I "C:\Users\William\Desktop\±œ #
-#                          “µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0               #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\af\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆ #
-#                          \SRC\coor ±∏∑›\Coor for ARM2.0                     #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\nwk\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sapi\" -I "C:\Users\William\Desktop\±œ“µ…Ë #
-#                          º∆\SRC\coor ±∏∑›\Coor for ARM2.0                   #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sec\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\sys\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\stack\zdo\" -I "C:\Users\William\Desktop\±œ“µ…Ëº #
-#                          ∆\SRC\coor ±∏∑›\Coor for ARM2.0                    #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\" -I "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC #
-#                          \coor ±∏∑›\Coor for ARM2.0                         #
-#                          –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\MyCoordin #
-#                          ator\Coordinator\CC2530DB\..\..\..\..\..\Component #
-#                          s\zmac\f8w\" -Ohz --require_prototypes             #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sapi\" -I    #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sec\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\sys\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\stack\zdo\" -I     #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\zmac\" -I          #
+#                          "C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor        #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\..\..\..\..\..\Components\zmac\f8w\" -Ohz    #
+#                          --require_prototypes                               #
 #    List file          =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\List\ZMain.lst                          #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\List\ZMain.lst                 #
 #    Object file        =  C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor         #
-#                          ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Proj #
-#                          ects\zstack\MyCoordinator\Coordinator\CC2530DB\Coo #
-#                          rdinatorEB\Obj\ZMain.r51                           #
+#                          ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝ #
+#                          æ›£©\Projects\zstack\MyCoordinator\Coordinator\CC2 #
+#                          530DB\CoordinatorEB\Obj\ZMain.r51                  #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£ªÓº∆ ±∆˜\Projects\zstack\ZMain\TI2530DB\ZMain.c
+C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\ARM\Coor for ARM 3.1(ÃÌº”÷∏¡Ó…œ¥´À˘”–≥ı ºªØ ˝æ›£©\Projects\zstack\ZMain\TI2530DB\ZMain.c
       1          /**************************************************************************************************
       2            Filename:       ZMain.c
       3            Revised:        $Date: 2010-09-17 16:25:30 -0700 (Fri, 17 Sep 2010) $
@@ -215,6 +219,11 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
    \                     P0INP:
    \   000000                DS 1
 
+   \                                 In  segment SFR_AN, at 0x90
+   \   union <unnamed> volatile __sfr _A_P1
+   \                     _A_P1:
+   \   000000                DS 1
+
    \                                 In  segment SFR_AN, at 0x9d
    \   unsigned char volatile __sfr SLEEPSTA
    \                     SLEEPSTA:
@@ -233,11 +242,6 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
    \                                 In  segment SFR_AN, at 0xc6
    \   unsigned char volatile __sfr CLKCONCMD
    \                     CLKCONCMD:
-   \   000000                DS 1
-
-   \                                 In  segment SFR_AN, at 0xfd
-   \   unsigned char volatile __sfr P0DIR
-   \                     P0DIR:
    \   000000                DS 1
 
    \                                 In  segment SFR_AN, at 0xfe
@@ -309,52 +313,54 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
    \   00002A   906270       MOV     DPTR,#0x6270
    \   00002D   7408         MOV     A,#0x8
    \   00002F   F0           MOVX    @DPTR,A
-   \   000030   43FE01       ORL     0xfe,#0x1
-   \   000033   43FD80       ORL     0xfd,#0x80
-   \   000036   438F01       ORL     0x8f,#0x1
-   \   000039                ; Setup parameters for call to function MAC_RfFrontendSetup
-   \   000039   12....       LCALL   ??MAC_RfFrontendSetup?relay
+   \   000030   C290         CLR     0x90.0
+   \   000032   43FE01       ORL     0xfe,#0x1
+   \   000035   C291         CLR     0x90.1
+   \   000037   43FE02       ORL     0xfe,#0x2
+   \   00003A   C294         CLR     0x90.4
+   \   00003C   43FE10       ORL     0xfe,#0x10
+   \   00003F   438F01       ORL     0x8f,#0x1
      80          
      81            // Make sure supply voltage is high enough to run
      82            zmain_vdd_check();
-   \   00003C   7E10         MOV     R6,#0x10
+   \   000042   7E10         MOV     R6,#0x10
    \                     ??main_3:
-   \   00003E                ; Setup parameters for call to function HalAdcCheckVdd
-   \   00003E   794A         MOV     R1,#0x4a
-   \   000040   12....       LCALL   ??HalAdcCheckVdd?relay
-   \   000043   E9           MOV     A,R1
-   \   000044   60F8         JZ      ??main_3
-   \   000046   1E           DEC     R6
-   \   000047   EE           MOV     A,R6
-   \   000048   70F4         JNZ     ??main_3
+   \   000044                ; Setup parameters for call to function HalAdcCheckVdd
+   \   000044   794A         MOV     R1,#0x4a
+   \   000046   12....       LCALL   ??HalAdcCheckVdd?relay
+   \   000049   E9           MOV     A,R1
+   \   00004A   60F8         JZ      ??main_3
+   \   00004C   1E           DEC     R6
+   \   00004D   EE           MOV     A,R6
+   \   00004E   70F4         JNZ     ??main_3
      83          
      84            // Initialize board I/O
      85            InitBoard( OB_COLD );
-   \   00004A                ; Setup parameters for call to function InitBoard
-   \   00004A   7900         MOV     R1,#0x0
-   \   00004C   12....       LCALL   ??InitBoard?relay
+   \   000050                ; Setup parameters for call to function InitBoard
+   \   000050   7900         MOV     R1,#0x0
+   \   000052   12....       LCALL   ??InitBoard?relay
      86          
      87            // Initialze HAL drivers
      88            HalDriverInit();
-   \   00004F                ; Setup parameters for call to function HalDriverInit
-   \   00004F   12....       LCALL   ??HalDriverInit?relay
+   \   000055                ; Setup parameters for call to function HalDriverInit
+   \   000055   12....       LCALL   ??HalDriverInit?relay
      89          
      90            // Initialize NV System
      91            osal_nv_init( NULL );
-   \   000052                ; Setup parameters for call to function osal_nv_init
-   \   000052   7A00         MOV     R2,#0x0
-   \   000054   7B00         MOV     R3,#0x0
-   \   000056   12....       LCALL   ??osal_nv_init?relay
+   \   000058                ; Setup parameters for call to function osal_nv_init
+   \   000058   7A00         MOV     R2,#0x0
+   \   00005A   7B00         MOV     R3,#0x0
+   \   00005C   12....       LCALL   ??osal_nv_init?relay
      92          
      93            // Initialize the MAC
      94            ZMacInit();
-   \   000059                ; Setup parameters for call to function ZMacInit
-   \   000059   12....       LCALL   ??ZMacInit?relay
+   \   00005F                ; Setup parameters for call to function ZMacInit
+   \   00005F   12....       LCALL   ??ZMacInit?relay
      95          
      96            // Determine the extended address
      97            zmain_ext_addr();
-   \   00005C                ; Setup parameters for call to function zmain_ext_addr
-   \   00005C   12....       LCALL   ??zmain_ext_addr?relay
+   \   000062                ; Setup parameters for call to function zmain_ext_addr
+   \   000062   12....       LCALL   ??zmain_ext_addr?relay
      98          
      99          #if defined ZCL_KEY_ESTABLISH
     100            // Initialize the Certicom certificate information.
@@ -363,8 +369,8 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     103          
     104            // Initialize basic NV items
     105            zgInit();
-   \   00005F                ; Setup parameters for call to function zgInit
-   \   00005F   12....       LCALL   ??zgInit?relay
+   \   000065                ; Setup parameters for call to function zgInit
+   \   000065   12....       LCALL   ??zgInit?relay
     106          
     107          #ifndef NONWK
     108            // Since the AF isn't a task, call it's initialization routine
@@ -373,20 +379,20 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     111          
     112            // Initialize the operating system
     113            osal_init_system();
-   \   000062                ; Setup parameters for call to function osal_init_system
-   \   000062   12....       LCALL   ??osal_init_system?relay
+   \   000068                ; Setup parameters for call to function osal_init_system
+   \   000068   12....       LCALL   ??osal_init_system?relay
     114          
     115            // Allow interrupts
     116            osal_int_enable( INTS_ALL );
-   \   000065                ; Setup parameters for call to function osal_int_enable
-   \   000065   79FF         MOV     R1,#-0x1
-   \   000067   12....       LCALL   ??osal_int_enable?relay
+   \   00006B                ; Setup parameters for call to function osal_int_enable
+   \   00006B   79FF         MOV     R1,#-0x1
+   \   00006D   12....       LCALL   ??osal_int_enable?relay
     117          
     118            // Final board initialization
     119            InitBoard( OB_READY );
-   \   00006A                ; Setup parameters for call to function InitBoard
-   \   00006A   7902         MOV     R1,#0x2
-   \   00006C   12....       LCALL   ??InitBoard?relay
+   \   000070                ; Setup parameters for call to function InitBoard
+   \   000070   7902         MOV     R1,#0x2
+   \   000072   12....       LCALL   ??InitBoard?relay
     120          
     121            // Display information about this device
     122            zmain_dev_info();
@@ -399,20 +405,20 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
     129          #endif
     130          
     131            osal_start_system(); // No Return from here
-   \   00006F                ; Setup parameters for call to function osal_start_system
-   \   00006F   12....       LCALL   ??osal_start_system?relay
+   \   000075                ; Setup parameters for call to function osal_start_system
+   \   000075   12....       LCALL   ??osal_start_system?relay
     132          
     133            return 0;  // Shouldn't get here.
-   \   000072   7A00         MOV     R2,#0x0
-   \   000074   7B00         MOV     R3,#0x0
-   \   000076   02....       LJMP    ?BRET
-   \   000079                REQUIRE SLEEPCMD
-   \   000079                REQUIRE SLEEPSTA
-   \   000079                REQUIRE CLKCONCMD
-   \   000079                REQUIRE CLKCONSTA
-   \   000079                REQUIRE P1DIR
-   \   000079                REQUIRE P0DIR
-   \   000079                REQUIRE P0INP
+   \   000078   7A00         MOV     R2,#0x0
+   \   00007A   7B00         MOV     R3,#0x0
+   \   00007C   02....       LJMP    ?BRET
+   \   00007F                REQUIRE SLEEPCMD
+   \   00007F                REQUIRE SLEEPSTA
+   \   00007F                REQUIRE CLKCONCMD
+   \   00007F                REQUIRE CLKCONSTA
+   \   00007F                REQUIRE _A_P1
+   \   00007F                REQUIRE P1DIR
+   \   00007F                REQUIRE P0INP
     134          } // main()
     135          
     136          /*********************************************************************
@@ -865,33 +871,32 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
 
    Maximum stack usage in bytes:
 
-     Function                 ISTACK PSTACK XSTACK
-     --------                 ------ ------ ------
-     main                         0      0      0
-       -> osal_int_disable        0      0      0
-       -> MAC_RfFrontendSetup     0      0      0
-       -> HalAdcCheckVdd          0      0      0
-       -> InitBoard               0      0      0
-       -> HalDriverInit           0      0      0
-       -> osal_nv_init            0      0      0
-       -> ZMacInit                0      0      0
-       -> zmain_ext_addr          0      0      0
-       -> zgInit                  0      0      0
-       -> osal_init_system        0      0      0
-       -> osal_int_enable         0      0      0
-       -> InitBoard               0      0      0
-       -> osal_start_system       0      0      0
-     zmain_ext_addr               2      0     23
-       -> osal_nv_item_init       0      0     42
-       -> osal_nv_read            0      0     46
-       -> osal_memcmp             0      0     44
-       -> HalFlashRead            0      0     42
-       -> osal_memcmp             0      0     44
-       -> osal_memcmp             0      0     44
-       -> osal_memcpy             0      0     44
-       -> osal_rand               0      0     38
-       -> osal_nv_write           0      0     46
-       -> ZMacSetReq              0      0     38
+     Function               ISTACK PSTACK XSTACK
+     --------               ------ ------ ------
+     main                       0      0      0
+       -> osal_int_disable      0      0      0
+       -> HalAdcCheckVdd        0      0      0
+       -> InitBoard             0      0      0
+       -> HalDriverInit         0      0      0
+       -> osal_nv_init          0      0      0
+       -> ZMacInit              0      0      0
+       -> zmain_ext_addr        0      0      0
+       -> zgInit                0      0      0
+       -> osal_init_system      0      0      0
+       -> osal_int_enable       0      0      0
+       -> InitBoard             0      0      0
+       -> osal_start_system     0      0      0
+     zmain_ext_addr             2      0     23
+       -> osal_nv_item_init     0      0     42
+       -> osal_nv_read          0      0     46
+       -> osal_memcmp           0      0     44
+       -> HalFlashRead          0      0     42
+       -> osal_memcmp           0      0     44
+       -> osal_memcmp           0      0     44
+       -> osal_memcpy           0      0     44
+       -> osal_rand             0      0     38
+       -> osal_nv_write         0      0     46
+       -> ZMacSetReq            0      0     38
 
 
    Segment part sizes:
@@ -899,13 +904,13 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
      Function/Label                                 Bytes
      --------------                                 -----
      P0INP                                             1
+     _A_P1                                             1
      SLEEPSTA                                          1
      CLKCONSTA                                         1
      SLEEPCMD                                          1
      CLKCONCMD                                         1
-     P0DIR                                             1
      P1DIR                                             1
-     main                                            121
+     main                                            127
      zmain_ext_addr                                  381
      ?Subroutine0                                     15
      ??main?relay                                      6
@@ -913,12 +918,12 @@ C:\Users\William\Desktop\±œ“µ…Ëº∆\SRC\coor ±∏∑›\Coor for ARM2.0 –ﬁ∏ƒµÿ÷∑±Ìº”»Î±£
      ?<Constant {255, 255, 255, 255, 255, 255, 255,    8
 
  
- 517 bytes in segment BANKED_CODE
+ 523 bytes in segment BANKED_CODE
   12 bytes in segment BANK_RELAYS
    7 bytes in segment SFR_AN
    8 bytes in segment XDATA_ROM_C
  
- 529 bytes of CODE  memory
+ 535 bytes of CODE  memory
    8 bytes of CONST memory
    0 bytes of DATA  memory (+ 7 bytes shared)
 

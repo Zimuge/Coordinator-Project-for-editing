@@ -35,6 +35,8 @@
 #define CMD_SET_DEVICEID  10
 #define CMD_GET_RSSI      15 
 #define CMD_SET_PANID     16
+#define CMD_INIT_COOR     17
+
 
 #define DEVICEID_MAX      100
 #define DEVICEID_MIN      0
@@ -98,4 +100,13 @@ typedef struct
 } AddrList_t;
 
 extern AddrList_t AddrList[101];  //the address list of the devices
+
+typedef enum
+{
+  FRAME_LEN = 0,\
+  FRAME_ROOMID,
+  FRAME_CMD,
+  FRAME_PARAHIGH,
+  FRAME_PARALOW
+}fram_field_t;
    
